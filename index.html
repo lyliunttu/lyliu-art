@@ -97,6 +97,13 @@ footer.seal .stamp{width:5.2rem;height:auto;margin:0 auto 1.8rem;display:block}
 .t em{font-family:"EB Garamond",serif;font-style:italic;font-weight:400;font-size:.92rem;color:var(--paper-dim);letter-spacing:.02em;margin-left:.5em}
 .m{font-family:"Noto Sans TC",sans-serif;font-size:.76rem;line-height:1.85;color:var(--muted);margin-top:.3rem;display:block}
 .m b{font-weight:400;color:var(--paper-dim)}
+
+.langbar{display:flex;gap:.4rem;justify-content:flex-end;margin:0 0 1.2rem}
+.langbar button{font-family:"Noto Sans TC",sans-serif;font-size:.72rem;letter-spacing:.12em;background:none;border:1px solid var(--rule);color:var(--muted);padding:.3rem .68rem;border-radius:2px;cursor:pointer;line-height:1.5}
+.langbar button[aria-pressed="true"]{color:var(--ink);background:var(--gold);border-color:var(--gold)}
+.en-body p{font-family:"EB Garamond",serif;font-size:1.12rem;line-height:1.75;text-align:left}
+.en-body p i{font-size:1em}
+@media print{.langbar{display:none}.en-body{display:block!important}}
 </style>
 </head>
 <body data-desktop="wide">
@@ -110,13 +117,15 @@ footer.seal .stamp{width:5.2rem;height:auto;margin:0 auto 1.8rem;display:block}
   <ul class="menu"><li><a href="about/">關於<span class="en">About</span></a></li><li><a href="plays/">劇作<span class="en">Plays</span></a></li><li><a href="essays/">評論散文<span class="en">Essays</span></a></li><li><a href="videos/">影片<span class="en">Videos</span></a></li><li><a href="cv/">履歷<span class="en">Curriculum Vitae</span></a></li><li><a href="company/">劇團<span class="en">Company</span></a></li></ul>
 
   <section class="bio">
-    <p class="eyebrow">自述</p>
-    <p>劉亮延，1991年畢業於國立臺東師院附設實驗小學六年五班。2006年創立李清照私人劇團感傷動作派。2015年取得國立交通大學社會與文化研究所文學博士。2024年起任教於國立臺東大學兒童文學研究所。著有劇作集《婦女生活十一種》（2021），詩集《牡丹刑》（2008）《有鬼》（2002）《你那菊花的年代》（1999）。編導劇目二十餘齣，策劃執行演出逾四百場，並製作四張專輯：《曹七巧》劇場原創音樂原聲帶（2008）、《馬伯司氏：劉欣然爵士京劇同名專輯》（2017）、《湘蘭圖：爵士臺灣戲曲現場收音專輯》（2024）、《歌仔曹七巧：台灣爵士戲曲專輯》（2025）。</p><p>童話的啟蒙是《三隻小豬》。大野狼一吹氣，房子就全倒，這個畫面他一直記得，以致颱風至今在他眼裡都還是童話。他對草屋與木屋的屋主始終同情不捨，也覺得故事加在他們身上的道德評價莫名其妙，反叛之心從這裡開始。後來經歷地震，他知道磚房一樣會倒，反而替大野狼委屈，也為《三隻小豬》嫌貧愛富、幸災樂禍的階級觀念感到難過。兒時的閱讀啟蒙是英文漢聲出版社1982年出版的十二冊《中國童話》，古裝、妖怪、苦命青衣與大俠刺客，很早就成為他的平行宇宙，也讓他與現代社會長期格格不入。30歲以來投身戲曲創作，他才確認這是童年閱讀史留下的創傷。</p>
-  </section>
-
-  <section class="bio en">
-    <p class="eyebrow">About</p>
-    <p>Liu Liang-Yen graduated from the Experimental Primary School attached to National Taitung Teachers College in 1991. In 2006 he founded the Physical Sentimental Theatre Company of Lee Qing Zhao the Private. He received his Ph.D. in Literature from the Institute of Social Research and Cultural Studies, National Chiao Tung University, in 2015, and has taught at the Graduate Institute of Children's Literature, National Taitung University, since 2024. He is the author of the play collection <i>Eleven Kinds of Women's Lives</i> and three books of poetry, <i>Ordeal on Peony</i>, <i>Ghosts</i>, and <i>Your Chrysanthemum Years</i>. He has written and directed more than twenty productions and planned and executed over four hundred performances. He has also produced four albums: <i>Tsao Chi-chiao: Original Theatre Soundtrack</i> (2008), <i>Lady Macbeth: Liu Hsin-jan's Jazz Jingju Album</i>, <i>Lady Orchid: A Live-Recorded Jazz Taiwanese Xiqu Album</i>, and <i>Tsô Tshit Khá: A Taiwanese Jazz Xiqu Album</i>.</p><p>His first fairy tale was <i>The Three Little Pigs</i>. The wolf blows, the houses collapse: that image has stayed with him, and to this day a typhoon still looks to him like a fairy tale. He has always felt for the owners of the straw house and the wooden house, and has always found the moral verdict the story passes on them absurd. That is where his resistance began. Later, having lived through earthquakes, he knew that brick houses fall too. He came to think the wolf had been wronged, and to be saddened by the class attitude of the story, which favours the rich, looks down on the poor and gloats over misfortune. His childhood reading began with the twelve-volume <i>Chinese Fairy Tales</i> published by Echo Publishing in 1982. Period costume, monsters, ill-fated <i>qingyi</i> heroines and knight-errant assassins became his parallel universe early on, and have left him long out of step with the modern world. He has worked in <i>xiqu</i> since his thirties, and only then did he confirm that this was the trauma left by his childhood reading.</p>
+    <div class="langbar" data-for="bio"><button type="button" data-lang="zh" aria-pressed="true">中文</button><button type="button" data-lang="en" aria-pressed="false">English</button></div>
+    <div class="zh-body">
+      <p class="eyebrow">自述</p>
+      <p>劉亮延，1991年畢業於國立臺東師院附設實驗小學六年五班。2006年創立李清照私人劇團感傷動作派。2015年取得國立交通大學社會與文化研究所文學博士。2024年起任教於國立臺東大學兒童文學研究所。著有劇作集《婦女生活十一種》（2021），詩集《牡丹刑》（2008）《有鬼》（2002）《你那菊花的年代》（1999）。編導劇目二十餘齣，策劃執行演出逾四百場，並製作四張專輯：《曹七巧》劇場原創音樂原聲帶（2008）、《馬伯司氏：劉欣然爵士京劇同名專輯》（2017）、《湘蘭圖：爵士臺灣戲曲現場收音專輯》（2024）、《歌仔曹七巧：台灣爵士戲曲專輯》（2025）。</p><p>童話的啟蒙是《三隻小豬》。大野狼一吹氣，房子就全倒，這個畫面他一直記得，以致颱風至今在他眼裡都還是童話。他對草屋與木屋的屋主始終同情不捨，也覺得故事加在他們身上的道德評價莫名其妙，反叛之心從這裡開始。後來經歷地震，他知道磚房一樣會倒，反而替大野狼委屈，也為《三隻小豬》嫌貧愛富、幸災樂禍的階級觀念感到難過。兒時的閱讀啟蒙是英文漢聲出版社1982年出版的十二冊《中國童話》，古裝、妖怪、苦命青衣與大俠刺客，很早就成為他的平行宇宙，也讓他與現代社會長期格格不入。30歲以來投身戲曲創作，他才確認這是童年閱讀史留下的創傷。</p>
+    </div>
+    <div class="en-body" hidden>
+      <p class="eyebrow">About</p>
+      <p>Liu Liang-Yen graduated from the Experimental Primary School attached to National Taitung Teachers College in 1991. In 2006 he founded the Physical Sentimental Theatre Company of Lee Qing Zhao the Private. He received his Ph.D. in Literature from the Institute of Social Research and Cultural Studies, National Chiao Tung University, in 2015, and has taught at the Graduate Institute of Children's Literature, National Taitung University, since 2024. He is the author of the play collection <i>Eleven Kinds of Women's Lives</i> and three books of poetry, <i>Ordeal on Peony</i>, <i>Ghosts</i>, and <i>Your Chrysanthemum Years</i>. He has written and directed more than twenty productions and planned and executed over four hundred performances. He has also produced four albums: <i>Tsao Chi-chiao: Original Theatre Soundtrack</i> (2008), <i>Lady Macbeth: Liu Hsin-jan's Jazz Jingju Album</i>, <i>Lady Orchid: A Live-Recorded Jazz Taiwanese Xiqu Album</i>, and <i>Tsô Tshit Khá: A Taiwanese Jazz Xiqu Album</i>.</p><p>His first fairy tale was <i>The Three Little Pigs</i>. The wolf blows, the houses collapse: that image has stayed with him, and to this day a typhoon still looks to him like a fairy tale. He has always felt for the owners of the straw house and the wooden house, and has always found the moral verdict the story passes on them absurd. That is where his resistance began. Later, having lived through earthquakes, he knew that brick houses fall too. He came to think the wolf had been wronged, and to be saddened by the class attitude of the story, which favours the rich, looks down on the poor and gloats over misfortune. His childhood reading began with the twelve-volume <i>Chinese Fairy Tales</i> published by Echo Publishing in 1982. Period costume, monsters, ill-fated <i>qingyi</i> heroines and knight-errant assassins became his parallel universe early on, and have left him long out of step with the modern world. He has worked in <i>xiqu</i> since his thirties, and only then did he confirm that this was the trauma left by his childhood reading.</p>
+    </div>
   </section>
 
   <section>
@@ -127,7 +136,26 @@ footer.seal .stamp{width:5.2rem;height:auto;margin:0 auto 1.8rem;display:block}
 <footer class="seal">
   <img class="stamp" src="images/company/%E5%8A%89%E4%BA%AE%E5%BB%B6_%E7%AB%A0.png" alt="劉亮延">
   lyliu.art　劇照著作權屬各攝影者所有
-</footer>
+</footer><script>
+(function(){
+  var KEY='lyliu-lang';
+  function apply(lang){
+    document.querySelectorAll('section').forEach(function(sec){
+      var zh=sec.querySelector(':scope > .zh-body'), en=sec.querySelector(':scope > .en-body');
+      if(!zh||!en) return;
+      zh.hidden=(lang==='en'); en.hidden=(lang!=='en');
+    });
+    document.querySelectorAll('.langbar button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.lang===lang));});
+  }
+  var start='zh';
+  try{var s=localStorage.getItem(KEY); if(s==='en'||s==='zh') start=s;}catch(e){}
+  if(start==='en') apply('en');
+  document.addEventListener('click',function(e){
+    var b=e.target.closest('.langbar button'); if(!b) return;
+    apply(b.dataset.lang); try{localStorage.setItem(KEY,b.dataset.lang);}catch(err){}
+  });
+})();
+</script>
 </div>
 </body>
 </html>
