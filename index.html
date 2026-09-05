@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>劉亮延 Liang-Yen Liu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@300;400;600;700&display=swap">
+<style>
+:root{--measure:34rem;--wide:52rem;--fs:1.0625rem;--cinnabar:#A8453A;
+  --ink:#F3EFE6;--ink-2:#EAE5DA;--ink-3:#E3DDD0;--paper:#1F1B17;--paper-dim:#4C4740;--muted:#7A746B;
+  --gold:#8C6D3F;--gold-dim:#B39868;--rule:rgba(31,27,23,.14)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--paper);font-family:"Noto Serif TC","EB Garamond","Songti TC",serif;
+  font-size:var(--fs);line-height:1.95;font-feature-settings:"palt" 1;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--gold);text-underline-offset:.25em;text-decoration-thickness:.5px}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--cinnabar);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--measure);margin:0 auto;padding:0 1.35rem}
+section{padding:2.6rem 0}
+section+section{border-top:1px solid var(--rule)}
+.nav{display:flex;justify-content:space-between;align-items:baseline;padding:1.2rem 0 .9rem;border-bottom:1px solid var(--rule);
+  font-family:"Noto Sans TC",sans-serif;font-size:.74rem;letter-spacing:.16em;color:var(--muted)}
+.nav .home{color:var(--paper);text-decoration:none}
+.nav .home i{display:inline-block;width:.55em;height:.55em;background:var(--cinnabar);margin-right:.6em;vertical-align:.05em}
+.nav a{color:var(--muted);text-decoration:none}
+h1{font-size:1.75rem;font-weight:600;line-height:1.4;margin:0;letter-spacing:.04em}
+h1 .en{display:block;font-family:"EB Garamond",serif;font-style:italic;font-size:1.05rem;font-weight:400;color:var(--gold);letter-spacing:.02em;margin-top:.35rem}
+.eyebrow{font-family:"Noto Sans TC",sans-serif;font-size:.72rem;letter-spacing:.2em;color:var(--muted);margin:0 0 1rem}
+p{margin:0 0 1.05em;text-align:justify;overflow-wrap:break-word;line-break:strict}
+p:last-child{margin-bottom:0}
+p i,p em{font-family:"EB Garamond",serif;font-style:italic;font-size:1.04em}
+.lead{font-size:1.12rem;line-height:1.9}
+.pending{color:var(--cinnabar)}
+figure{margin:1.8rem 0}
+figure img{border-radius:1px;width:100%;object-fit:cover;background:var(--ink-2);color:transparent}
+figcaption{font-family:"Noto Sans TC",sans-serif;font-size:.74rem;line-height:1.75;color:var(--muted);margin-top:.7rem;text-align:center}
+figcaption b{color:var(--paper-dim);font-weight:500}
+footer{padding:3rem 0 4rem;text-align:center;color:var(--muted);font-family:"Noto Sans TC",sans-serif;font-size:.78rem;line-height:2;border-top:1px solid var(--rule);margin-top:2.6rem}
+footer .cjk{font-family:"Noto Serif TC",serif;font-size:1.5rem;letter-spacing:.5em;text-indent:.5em;color:var(--paper);margin-bottom:.5rem}
+footer .lat{font-family:"EB Garamond",serif;font-style:italic;font-size:1.05rem;color:var(--gold);margin-bottom:1.6rem}
+@media (min-width:46rem){:root{--fs:1.09rem}.wrap{padding:0 2rem}section{padding:3.4rem 0}}
+footer.seal .wm{width:min(22rem,88%);height:auto;margin:0 auto 1.4rem;display:block}
+footer.seal .stamp{width:5.2rem;height:auto;margin:0 auto 1.8rem;display:block}
+
+.band{display:none}
+@media (min-width:58rem){
+  body[data-desktop="wide"] .band{display:block;position:relative;width:var(--wide);max-width:calc(100vw - 4rem);left:50%;transform:translateX(-50%);margin:1.6rem 0 0}
+  .band img{width:100%;aspect-ratio:2500/480;object-fit:cover;display:block;border-radius:1px}
+  .band .cap{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.45)}
+  .band .cap b{color:#fff;font-family:"Noto Serif TC",serif;font-weight:500;font-size:1.9rem;letter-spacing:.22em;text-indent:.22em;line-height:1.3}
+  .band .cap small{font-family:"Noto Sans TC",sans-serif;font-size:.75rem;letter-spacing:.34em;text-indent:.34em;margin-top:.5rem}
+  body[data-desktop="wide"] .band ~ .head h1:not(.company){display:none}
+  body[data-desktop="wide"] .has-band .cover{display:none}
+}
+
+.mast{padding:3.2rem 0 1.6rem;text-align:center}
+.mast .seal{display:inline-block;width:.8rem;height:.8rem;background:var(--cinnabar);margin-bottom:1.4rem}
+.mast h1{font-size:2.2rem;letter-spacing:.5em;text-indent:.5em;font-weight:600;line-height:1.3}
+.mast .en{letter-spacing:.04em;font-size:1.15rem}
+.mast .tag{font-family:"Noto Sans TC",sans-serif;font-size:.74rem;letter-spacing:.2em;color:var(--muted);margin-top:1.2rem}
+.menu{list-style:none;margin:0;padding:1.2rem 0 .4rem;display:grid;grid-template-columns:1fr 1fr;gap:0 1.6rem}
+.menu li{border-top:1px solid var(--rule)}
+.menu a{display:flex;justify-content:space-between;align-items:baseline;padding:.8rem .2rem;text-decoration:none;color:var(--paper);font-size:1.08rem;letter-spacing:.06em}
+.menu a .en{font-family:"EB Garamond",serif;font-style:italic;font-size:.92rem;color:var(--gold)}
+.menu a:hover{color:var(--gold)}
+.bio p{font-size:1.06rem}
+.bio.en p{font-family:"EB Garamond",serif;font-size:1.12rem;line-height:1.75;text-align:left}
+.bio.en p i{font-size:1em}
+.social{list-style:none;margin:0;padding:0}
+.social li{border-top:1px solid var(--rule)}
+.social li:last-child{border-bottom:1px solid var(--rule)}
+.social a{display:flex;justify-content:space-between;gap:.7rem;padding:.7rem .35rem;font-size:.94rem;color:var(--paper);text-decoration:none}
+.social .d{font-family:"Noto Sans TC",sans-serif;font-size:.78rem;color:var(--muted)}
+@media (max-width:30rem){.menu{grid-template-columns:1fr}}
+
+.head{padding:2.6rem 0 0}
+.head p{font-family:"Noto Sans TC",sans-serif;font-size:.78rem;letter-spacing:.08em;color:var(--muted);margin:1.1rem 0 0;line-height:1.9;text-align:left}
+.jump{display:flex;gap:.5rem;margin:1.4rem 0 0;padding:0 0 2.4rem;list-style:none;flex-wrap:wrap}
+.jump a{display:inline-block;font-family:"Noto Sans TC",sans-serif;font-size:.74rem;letter-spacing:.14em;color:var(--cinnabar);border:1px solid rgba(168,69,58,.4);padding:.34rem .7rem .3rem;border-radius:2px;text-decoration:none;line-height:1.5}
+.jump a:hover{background:rgba(168,69,58,.08)}
+.decade{display:flex;align-items:baseline;gap:.9rem;padding:2.2rem 0 .9rem;border-top:1px solid var(--rule)}
+.decade h2{margin:0;font-family:"EB Garamond",serif;font-size:1.5rem;font-weight:500;letter-spacing:.04em;color:var(--paper-dim);font-variant-numeric:tabular-nums}
+.decade span{font-family:"Noto Sans TC",sans-serif;font-size:.72rem;letter-spacing:.16em;color:var(--muted)}
+.list{list-style:none;margin:0;padding:0}
+.list li{border-top:1px solid var(--rule)}
+.list li:last-child{border-bottom:1px solid var(--rule)}
+.item{display:grid;grid-template-columns:4.6rem 1fr;gap:1rem;padding:1.1rem .2rem;text-decoration:none;color:var(--paper)}
+.item:hover{background:rgba(140,109,63,.07)}
+.thumb{width:4.6rem;height:4.6rem;background:var(--ink-2);border-radius:1px;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;color:transparent}
+.thumb.none{display:flex;align-items:center;justify-content:center;font-family:"Noto Sans TC",sans-serif;font-size:.66rem;letter-spacing:.1em;color:var(--muted);text-align:center;line-height:1.5;background:var(--ink-3)}
+.year{font-family:"EB Garamond",serif;font-size:.92rem;letter-spacing:.08em;color:var(--gold);font-variant-numeric:tabular-nums;display:block;line-height:1.6}
+.t{font-size:1.16rem;font-weight:600;line-height:1.55;letter-spacing:.03em;display:block;text-wrap:balance}
+.t em{font-family:"EB Garamond",serif;font-style:italic;font-weight:400;font-size:.92rem;color:var(--paper-dim);letter-spacing:.02em;margin-left:.5em}
+.m{font-family:"Noto Sans TC",sans-serif;font-size:.76rem;line-height:1.85;color:var(--muted);margin-top:.3rem;display:block}
+.m b{font-weight:400;color:var(--paper-dim)}
+</style>
+</head>
+<body data-desktop="wide">
+<div class="wrap">
+<header class="mast">
+    <span class="seal"></span>
+    <h1>劉亮延<span class="en" style="display:block;font-family:'EB Garamond',serif;font-style:italic;font-weight:400;color:var(--gold);margin-top:.4rem">Liang-Yen Liu</span></h1>
+    <p class="tag">詩人　劇作家　劇場導演　策評人　客家人</p>
+  </header>
+
+  <ul class="menu"><li><a href="about/">關於<span class="en">About</span></a></li><li><a href="plays/">劇作<span class="en">Plays</span></a></li><li><a href="essays/">評論散文<span class="en">Essays</span></a></li><li><a href="videos/">影片<span class="en">Videos</span></a></li><li><a href="cv/">履歷<span class="en">Curriculum Vitae</span></a></li><li><a href="company/">劇團<span class="en">Company</span></a></li></ul>
+
+  <section class="bio">
+    <p class="eyebrow">自述</p>
+    <p>劉亮延，1991年畢業於國立臺東師院附設實驗小學六年五班。2006年創立李清照私人劇團感傷動作派。2015年取得國立交通大學社會與文化研究所文學博士。2024年起任教於國立臺東大學兒童文學研究所。著有劇作集《婦女生活十一種》（2021），詩集《牡丹刑》（2008）《有鬼》（2002）《你那菊花的年代》（1999）。編導劇目二十餘齣，策劃執行演出逾四百場，並製作四張專輯：《曹七巧》劇場原創音樂原聲帶（2008）、《馬伯司氏：劉欣然爵士京劇同名專輯》（2017）、《湘蘭圖：爵士臺灣戲曲現場收音專輯》（2024）、《歌仔曹七巧：台灣爵士戲曲專輯》（2025）。</p><p>童話的啟蒙是《三隻小豬》。大野狼一吹氣，房子就全倒，這個畫面他一直記得，以致颱風至今在他眼裡都還是童話。他對草屋與木屋的屋主始終同情不捨，也覺得故事加在他們身上的道德評價莫名其妙，反叛之心從這裡開始。後來經歷地震，他知道磚房一樣會倒，反而替大野狼委屈，也為《三隻小豬》嫌貧愛富、幸災樂禍的階級觀念感到難過。兒時的閱讀啟蒙是英文漢聲出版社1982年出版的十二冊《中國童話》，古裝、妖怪、苦命青衣與大俠刺客，很早就成為他的平行宇宙，也讓他與現代社會長期格格不入。30歲以來投身戲曲創作，他才確認這是童年閱讀史留下的創傷。</p>
+  </section>
+
+  <section class="bio en">
+    <p class="eyebrow">About</p>
+    <p>Liu Liang-Yen graduated from the Experimental Primary School attached to National Taitung Teachers College in 1991. In 2006 he founded the Physical Sentimental Theatre Company of Lee Qing Zhao the Private. He received his Ph.D. in Literature from the Institute of Social Research and Cultural Studies, National Chiao Tung University, in 2015, and has taught at the Graduate Institute of Children's Literature, National Taitung University, since 2024. He is the author of the play collection <i>Eleven Kinds of Women's Lives</i> and three books of poetry, <i>Ordeal on Peony</i>, <i>Ghosts</i>, and <i>Your Chrysanthemum Years</i>. He has written and directed more than twenty productions and planned and executed over four hundred performances. He has also produced four albums: <i>Tsao Chi-chiao: Original Theatre Soundtrack</i> (2008), <i>Lady Macbeth: Liu Hsin-jan's Jazz Jingju Album</i>, <i>Lady Orchid: A Live-Recorded Jazz Taiwanese Xiqu Album</i>, and <i>Tsô Tshit Khá: A Taiwanese Jazz Xiqu Album</i>.</p><p>His first fairy tale was <i>The Three Little Pigs</i>. The wolf blows, the houses collapse: that image has stayed with him, and to this day a typhoon still looks to him like a fairy tale. He has always felt for the owners of the straw house and the wooden house, and has always found the moral verdict the story passes on them absurd. That is where his resistance began. Later, having lived through earthquakes, he knew that brick houses fall too. He came to think the wolf had been wronged, and to be saddened by the class attitude of the story, which favours the rich, looks down on the poor and gloats over misfortune. His childhood reading began with the twelve-volume <i>Chinese Fairy Tales</i> published by Echo Publishing in 1982. Period costume, monsters, ill-fated <i>qingyi</i> heroines and knight-errant assassins became his parallel universe early on, and have left him long out of step with the modern world. He has worked in <i>xiqu</i> since his thirties, and only then did he confirm that this was the trauma left by his childhood reading.</p>
+  </section>
+
+  <section>
+    <p class="eyebrow">社群</p>
+    <ul class="social"><li><a href="https://www.facebook.com/liangyen" rel="noopener"><span>Facebook</span><span class="d">劉亮延</span></a></li><li><a href="https://www.instagram.com/ly0615_/" rel="noopener"><span>Instagram</span><span class="d">劉亮延 @ly0615_</span></a></li><li><a href="https://www.instagram.com/theatreofleeqingzhao2024/" rel="noopener"><span>Instagram</span><span class="d">李清照私人劇團感傷動作派</span></a></li><li><a href="https://www.youtube.com/@theatreofleeqingzhao" rel="noopener"><span>YouTube</span><span class="d">@theatreofleeqingzhao</span></a></li><li><a href="https://www.facebook.com/lqz2006" rel="noopener"><span>Facebook</span><span class="d">李清照私人劇團感傷動作派</span></a></li></ul>
+  </section>
+
+<footer class="seal">
+  <img class="stamp" src="images/company/%E5%8A%89%E4%BA%AE%E5%BB%B6_%E7%AB%A0.png" alt="劉亮延">
+  lyliu.art　劇照著作權屬各攝影者所有
+</footer>
+</div>
+</body>
+</html>

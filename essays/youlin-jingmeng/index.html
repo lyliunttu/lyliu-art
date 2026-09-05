@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>詩歌的實踐：《遊林驚夢》的傷痕書寫｜劉亮延</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@300;400;600;700&display=swap">
+<style>
+:root{--measure:34rem;--wide:52rem;--fs:1.0625rem;--cinnabar:#A8453A;
+  --ink:#F3EFE6;--ink-2:#EAE5DA;--ink-3:#E3DDD0;--paper:#1F1B17;--paper-dim:#4C4740;--muted:#7A746B;
+  --gold:#8C6D3F;--gold-dim:#B39868;--rule:rgba(31,27,23,.14)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--paper);font-family:"Noto Serif TC","EB Garamond","Songti TC",serif;
+  font-size:var(--fs);line-height:1.95;font-feature-settings:"palt" 1;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--gold);text-underline-offset:.25em;text-decoration-thickness:.5px}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--cinnabar);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--measure);margin:0 auto;padding:0 1.35rem}
+section{padding:2.6rem 0}
+section+section{border-top:1px solid var(--rule)}
+.nav{display:flex;justify-content:space-between;align-items:baseline;padding:1.2rem 0 .9rem;border-bottom:1px solid var(--rule);
+  font-family:"Noto Sans TC",sans-serif;font-size:.74rem;letter-spacing:.16em;color:var(--muted)}
+.nav .home{color:var(--paper);text-decoration:none}
+.nav .home i{display:inline-block;width:.55em;height:.55em;background:var(--cinnabar);margin-right:.6em;vertical-align:.05em}
+.nav a{color:var(--muted);text-decoration:none}
+h1{font-size:1.75rem;font-weight:600;line-height:1.4;margin:0;letter-spacing:.04em}
+h1 .en{display:block;font-family:"EB Garamond",serif;font-style:italic;font-size:1.05rem;font-weight:400;color:var(--gold);letter-spacing:.02em;margin-top:.35rem}
+.eyebrow{font-family:"Noto Sans TC",sans-serif;font-size:.72rem;letter-spacing:.2em;color:var(--muted);margin:0 0 1rem}
+p{margin:0 0 1.05em;text-align:justify;overflow-wrap:break-word;line-break:strict}
+p:last-child{margin-bottom:0}
+p i,p em{font-family:"EB Garamond",serif;font-style:italic;font-size:1.04em}
+.lead{font-size:1.12rem;line-height:1.9}
+.pending{color:var(--cinnabar)}
+figure{margin:1.8rem 0}
+figure img{border-radius:1px;width:100%;object-fit:cover;background:var(--ink-2);color:transparent}
+figcaption{font-family:"Noto Sans TC",sans-serif;font-size:.74rem;line-height:1.75;color:var(--muted);margin-top:.7rem;text-align:center}
+figcaption b{color:var(--paper-dim);font-weight:500}
+footer{padding:3rem 0 4rem;text-align:center;color:var(--muted);font-family:"Noto Sans TC",sans-serif;font-size:.78rem;line-height:2;border-top:1px solid var(--rule);margin-top:2.6rem}
+footer .cjk{font-family:"Noto Serif TC",serif;font-size:1.5rem;letter-spacing:.5em;text-indent:.5em;color:var(--paper);margin-bottom:.5rem}
+footer .lat{font-family:"EB Garamond",serif;font-style:italic;font-size:1.05rem;color:var(--gold);margin-bottom:1.6rem}
+@media (min-width:46rem){:root{--fs:1.09rem}.wrap{padding:0 2rem}section{padding:3.4rem 0}}
+footer.seal .wm{width:min(22rem,88%);height:auto;margin:0 auto 1.4rem;display:block}
+footer.seal .stamp{width:5.2rem;height:auto;margin:0 auto 1.8rem;display:block}
+
+.band{display:none}
+@media (min-width:58rem){
+  body[data-desktop="wide"] .band{display:block;position:relative;width:var(--wide);max-width:calc(100vw - 4rem);left:50%;transform:translateX(-50%);margin:1.6rem 0 0}
+  .band img{width:100%;aspect-ratio:2500/480;object-fit:cover;display:block;border-radius:1px}
+  .band .cap{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.45)}
+  .band .cap b{color:#fff;font-family:"Noto Serif TC",serif;font-weight:500;font-size:1.9rem;letter-spacing:.22em;text-indent:.22em;line-height:1.3}
+  .band .cap small{font-family:"Noto Sans TC",sans-serif;font-size:.75rem;letter-spacing:.34em;text-indent:.34em;margin-top:.5rem}
+  body[data-desktop="wide"] .band ~ .head h1:not(.company){display:none}
+  body[data-desktop="wide"] .has-band .cover{display:none}
+}
+
+.cover{position:relative;margin:0 -1.35rem}
+.cover img{aspect-ratio:3/2}
+.cover img.portrait{object-position:50% 12%}
+.cover::after{content:"";position:absolute;inset:auto 0 0 0;height:30%;background:linear-gradient(to bottom,rgba(0,0,0,0),var(--ink))}
+.cover figcaption{position:absolute;left:1.35rem;bottom:.6rem;color:var(--paper-dim);letter-spacing:.06em;text-align:left;margin:0}
+.meta{padding-top:1.6rem}
+.badge{display:inline-block;font-family:"Noto Sans TC",sans-serif;font-size:.72rem;letter-spacing:.18em;color:var(--gold);
+  border:1px solid var(--gold-dim);padding:.4rem .7rem .35rem;border-radius:2px;line-height:1.4;margin-top:1.6rem}
+h1.title{margin-top:1.2rem}
+.credits{font-size:.97rem;line-height:1.85}
+.credits dl{margin:0;display:grid;grid-template-columns:5.6rem 1fr;gap:.5rem .9rem}
+.credits dt{font-family:"Noto Sans TC",sans-serif;font-size:.75rem;letter-spacing:.1em;color:var(--gold);padding-top:.3rem;line-height:1.7}
+.credits dd{margin:0}
+.review{margin:1.9rem 0 0}
+.review:first-of-type{margin-top:1.2rem}
+.review .cite{font-size:.99rem;line-height:1.8}
+.review .cite .src{font-family:"Noto Sans TC",sans-serif;font-size:.78rem;color:var(--muted);display:block}
+blockquote{margin:.6rem 0 0;padding-left:1rem;border-left:2px solid var(--gold-dim);font-size:.99rem;line-height:1.95;color:var(--paper-dim);font-style:italic}
+blockquote p{text-indent:0}
+.gallery figure img{aspect-ratio:3/2}
+.gallery figure.tall img{aspect-ratio:2/3}
+.eps{list-style:none;margin:1.3rem 0 0;padding:0}
+.eps li{border-top:1px solid var(--rule)}
+.eps li:last-child{border-bottom:1px solid var(--rule)}
+.eps a{display:flex;justify-content:space-between;align-items:baseline;gap:.7rem;padding:.7rem .35rem;font-size:.94rem;color:var(--paper);text-decoration:none;border-radius:2px}
+.eps a:hover{background:rgba(201,162,92,.10)}
+.eps .n{font-family:"Noto Sans TC",sans-serif;font-size:.74rem;letter-spacing:.1em;color:var(--gold)}
+.eps .d{font-family:"Noto Sans TC",sans-serif;font-size:.78rem;color:var(--muted);white-space:nowrap}
+.pager{display:flex;justify-content:space-between;gap:1rem;padding:1.4rem 0;font-family:"Noto Sans TC",sans-serif;font-size:.78rem;letter-spacing:.06em}
+.pager a{color:var(--muted);text-decoration:none}
+@media (min-width:46rem){.cover{margin:0 -2rem}.cover figcaption{left:2rem}}
+
+.head{padding:2.6rem 0 0}
+.head p{font-family:"Noto Sans TC",sans-serif;font-size:.78rem;letter-spacing:.08em;color:var(--muted);margin:1.1rem 0 0;line-height:1.9;text-align:left}
+.jump{display:flex;gap:.5rem;margin:1.4rem 0 0;padding:0 0 2.4rem;list-style:none;flex-wrap:wrap}
+.jump a{display:inline-block;font-family:"Noto Sans TC",sans-serif;font-size:.74rem;letter-spacing:.14em;color:var(--cinnabar);border:1px solid rgba(168,69,58,.4);padding:.34rem .7rem .3rem;border-radius:2px;text-decoration:none;line-height:1.5}
+.jump a:hover{background:rgba(168,69,58,.08)}
+.decade{display:flex;align-items:baseline;gap:.9rem;padding:2.2rem 0 .9rem;border-top:1px solid var(--rule)}
+.decade h2{margin:0;font-family:"EB Garamond",serif;font-size:1.5rem;font-weight:500;letter-spacing:.04em;color:var(--paper-dim);font-variant-numeric:tabular-nums}
+.decade span{font-family:"Noto Sans TC",sans-serif;font-size:.72rem;letter-spacing:.16em;color:var(--muted)}
+.list{list-style:none;margin:0;padding:0}
+.list li{border-top:1px solid var(--rule)}
+.list li:last-child{border-bottom:1px solid var(--rule)}
+.item{display:grid;grid-template-columns:4.6rem 1fr;gap:1rem;padding:1.1rem .2rem;text-decoration:none;color:var(--paper)}
+.item:hover{background:rgba(140,109,63,.07)}
+.thumb{width:4.6rem;height:4.6rem;background:var(--ink-2);border-radius:1px;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;color:transparent}
+.thumb.none{display:flex;align-items:center;justify-content:center;font-family:"Noto Sans TC",sans-serif;font-size:.66rem;letter-spacing:.1em;color:var(--muted);text-align:center;line-height:1.5;background:var(--ink-3)}
+.year{font-family:"EB Garamond",serif;font-size:.92rem;letter-spacing:.08em;color:var(--gold);font-variant-numeric:tabular-nums;display:block;line-height:1.6}
+.t{font-size:1.16rem;font-weight:600;line-height:1.55;letter-spacing:.03em;display:block;text-wrap:balance}
+.t em{font-family:"EB Garamond",serif;font-style:italic;font-weight:400;font-size:.92rem;color:var(--paper-dim);letter-spacing:.02em;margin-left:.5em}
+.m{font-family:"Noto Sans TC",sans-serif;font-size:.76rem;line-height:1.85;color:var(--muted);margin-top:.3rem;display:block}
+.m b{font-weight:400;color:var(--paper-dim)}
+
+.item.ess{grid-template-columns:2.6rem 1fr;gap:.9rem}
+.no{font-family:"EB Garamond",serif;font-size:1.1rem;letter-spacing:.04em;color:var(--gold);font-variant-numeric:tabular-nums;line-height:1.55;padding-top:.05rem}
+.t.ess{font-size:1.08rem;font-weight:600;line-height:1.6;color:var(--paper);text-decoration:none}
+a.t.ess:hover{color:var(--gold)}
+.item.ess:hover{background:none}
+.m .ext{white-space:nowrap;text-decoration-thickness:.5px}
+.cat{display:inline-block;font-family:"Noto Sans TC",sans-serif;font-size:.68rem;letter-spacing:.14em;color:var(--gold);border:1px solid var(--gold-dim);padding:.1rem .45rem .05rem;border-radius:2px;line-height:1.5;margin-right:.5rem;vertical-align:.1em;font-weight:400}
+.cat.k2{color:var(--muted);border-color:rgba(122,116,107,.5)}
+.m a{color:var(--gold)}
+.m .ext{white-space:nowrap}
+.m .stub{color:var(--muted);font-style:normal}
+.yr{display:flex;align-items:baseline;gap:.9rem;padding:2rem 0 .7rem;border-top:1px solid var(--rule)}
+.yr h2{margin:0;font-family:"EB Garamond",serif;font-size:1.35rem;font-weight:500;letter-spacing:.04em;color:var(--paper-dim);font-variant-numeric:tabular-nums}
+.yr span{font-family:"Noto Sans TC",sans-serif;font-size:.72rem;letter-spacing:.16em;color:var(--muted)}
+.list li.stub .item{color:var(--paper-dim)}
+.list li.stub .item:hover{background:none}
+/* 內頁 */
+.ehead{padding:2.6rem 0 0}
+.ehead h1{font-size:1.55rem;line-height:1.5;text-wrap:balance}
+.ehead .meta{font-family:"Noto Sans TC",sans-serif;font-size:.78rem;letter-spacing:.06em;color:var(--muted);line-height:1.9;margin:1.1rem 0 0;padding:0;text-align:left}
+.ehead .meta a{color:var(--gold)}
+.ehead .meta b{font-weight:400;color:var(--paper-dim)}
+.enote{font-family:"Noto Sans TC",sans-serif;font-size:.76rem;line-height:1.85;color:var(--muted);margin:1rem 0 0;padding:.7rem .9rem;border-left:2px solid var(--gold-dim);text-align:left}
+article{padding:2.4rem 0 1rem}
+article p{text-indent:0}
+article h2{font-size:1.08rem;font-weight:600;letter-spacing:.06em;margin:2.2rem 0 .9rem;line-height:1.6}
+article h2:first-child{margin-top:0}
+article .byline{font-family:"Noto Sans TC",sans-serif;font-size:.8rem;letter-spacing:.06em;color:var(--muted);text-align:left}
+article .fn{font-size:.9rem;line-height:1.85;color:var(--paper-dim);text-align:left;margin-bottom:.7em}
+article .info{font-family:"Noto Sans TC",sans-serif;font-size:.8rem;line-height:1.9;color:var(--paper-dim);text-align:left}
+article .sig{text-align:right;color:var(--paper-dim);font-size:.95rem}
+article sup{font-family:"EB Garamond",serif;font-size:.7em;color:var(--gold);line-height:0;margin-left:.1em}
+article[lang="ja"]{font-family:"Noto Serif TC","Hiragino Mincho ProN","Yu Mincho",serif}
+.pager{border-top:1px solid var(--rule)}
+.pager a{display:block;color:var(--paper);max-width:46%}
+.pager a small{display:block;color:var(--muted);letter-spacing:.14em;margin-bottom:.2rem}
+.pager a.next{text-align:right}
+</style>
+</head>
+<body data-desktop="wide">
+<div class="wrap">
+<div class="nav">
+    <a class="home" href="../../"><i></i>劉亮延</a>
+    <a href="../../essays/">評論散文</a>
+  </div>
+
+  <header class="ehead">
+    <p class="eyebrow">評論散文　38　劇場評論</p>
+    <h1>詩歌的實踐：《遊林驚夢》的傷痕書寫</h1>
+    <p class="meta"><b>表演藝術評論台</b>　2022/07/04　<a class="ext" href="https://pareviews.ncafroc.org.tw/comments/b369554e-9a5a-4fc5-8486-e8d2cc1a2478" rel="noopener">原文（表演藝術評論台）</a></p>
+    
+  </header>
+
+  <article lang="zh-Hant">
+    <p>《遊林驚夢》的演出，發生在銅門部落大祭場<sup>1</sup>。祭場平台種植綠草，面積超過一個足球場，演出與前台動線（包含停車）使用區域約有半個祭場大，舞台區域環繞於觀眾四周。演出在天黑之後揭幕，隨著聲音與燈光的導引，觀眾置身於劇場的黑暗中，在擴音與燈具設備的刺激之外，持續受到環境聲響的影響如蟲鳴蛙鳴，演出在草地潮濕觸感與雨衣雨具之間推進，觀眾的行動自由、舒散，從各個角度都能看到。</p>
+    <p>作為國藝會近年以科技藝術為指標績效，積極推動的「跨域合創專案」的階段性呈現，此案以當代原住民性別認同、樂舞儀式為題獲得評審注目，在科技藝術與表演藝術之間跨領域合作，並有延伸到奧地利林茲電子藝術節的第二階段發展。然而國內產官界近年潮流「為科技而科技」，恍如隔世般「為現代而現代」，科技主義究竟該如何隱身於表演藝術背後，以至於恰如其分或搭配相宜，早已不再是國家藝文政策關注的問題，當科技主義與原住民文化搭起橋樑，當我們看到這兩個文明進程的極端得以相遇，從2021年林介文的「裹山計畫」開始，生理性的切割與掏空被看見後，我們在2022年東冬侯溫「劇山計畫」三個表演製作中，這齣未來美好、產業共榮、科技穿刺的《遊林驚夢》，恐怕才是對國家藝術文化開發主義（extractivism）最大程度的諷刺，原住民資源將繼續被濫採開發，去年是土地石礦，今年換成記憶傷痕。</p>
+    <p>總策劃鄭淑麗與導演東冬侯溫在這個製作中，以雷射燈光（張方禹作品），以及二座菱形的錄像銀幕（吳梓安作品）呈現科技質感。雷射燈具跨距約20米，在演出中作為河川的意向出現，舞者穿梭遊戲期間，或彈撥口簧、跳躍、或低緩前行，該段落是全劇視覺上的焦點。此外，尚有二座立體造型的空間裝置（黃林育麟等人作品），分別佔據祭場平台兩端，主要由白色保麗龍球堆疊，內以鐵構支稱，造型呈現管狀、錐狀、獸角型，整體高度不及3米。這個演出從一句提於白板上的粗體黑字「那天巫師帶領我走入」開始，演員（伊苞）在藍色水光燈照射下的白板持續書寫，依稀看見第二句「酒和香菸，祭告祖靈⋯」。</p>
+    <p>浪擲科技資本的謀略與效率暫且擱置，這終究是一齣關於性別認同歷程的演出，全長90分鐘。透過數個片段，導演重現了取材自身夢境、記憶、幻想之中的畫面，在前後七個段落中，多有樂舞歌謠穿插，但語言問題無法跨越，歌謠剩下吟謠，朦朧中恰似劇場性的聲響。就語言與傳達而言，這個作品僅存中段被霸凌者的自述，負擔著整場演出的訊息傳遞工作。在這段以太魯閣語與華語交錯翻譯的自述中，導演東冬侯溫從祭場一側的大石頭前（神靈降落之處），朝向河谷方向以直線踏步前進，每走一步即從竹簍中拿出一個紅色的塑料拖鞋，啪一聲丟在草地上。以此累進，形成一條啪啪作聲、蹣跚前行、恍如有紅色油漆大片掉落的直線，直到穿過觀眾群，走向以雷射光形成的冥川。自述者說起兒時就讀天主教學校時，被學長霸凌的往事，平靜而疏離的講述，已經不再夾帶有報復或控訴的情緒起伏。越講越多紅拖鞋，就好像紅拖鞋是一種永無止境的掉落／掉落的永無止境。而紅色拖鞋，漸漸形成一種具有象徵意義的符號，在這位終於長大的被霸凌者身後，形成了記號，構成了軌跡。或許那位在教會學校裡曾遭受過傷害的男孩，與記憶中宿舍門廊外紅色的拖鞋之間，形成了一種難分捨的依戀。我們進而發現，這個在演出中所呈現出來的，以某種偏執、強迫甚至些許歇斯底里形式出現的，依戀的模樣的背面，竟是一位性別氣質特殊的男孩，他生長歷程中的痛與恨。</p>
+    <p>「將控訴與復仇翻譯成為依戀與延長的痕跡」，這無疑是一種高尚的詩歌的語言。回到現實生活中，我們想起在夜店或白日遊行的街頭，精心打扮濃妝豔抹，掌握了高超易容技術的酷兒行動主義者；包括了具有原住民身份，但卻尚未或者無暇面對族群文化的扮裝表演者；甚至我們或許腦中也閃過了，那些更加張揚的、超越大眾審美慣習的、奇形怪狀根本不算漂亮的扮裝表演的政治宣傳家等人，又一次輕鬆自在地通過了昂貴的化妝品與化妝術，成功把有色人種遮蔽成為白色人種，將無聲的對嘴表演當作唯一技術性指標；甚至甚至還有身理女性，開始著迷於將自己裝扮成變裝者的樣子，學習男性變裝者扮演女性的姿態，又再一次將變裝變裝起來。在這個政治正確便是文明，性別平權是無疑的意識形態，霹靂卡霹靂拉拉貝貝魯托的現代社會之中，筆者認為《遊林驚夢》核心的意義在於再次展現了，巫師或者任何一種儀式的中介者，所必須擁有的能力，詩歌的能力。一個能夠善用語言表述／引導／傳遞，在迂迴的情感與思想之間流動的人，當主體表述傷痛的時候，傷痛成為詩歌。當主體再現夢境的時候，夢境成為音樂。觀眾不曾抗拒音樂，即便那受制於語言，但也自然能成為劇場聲響。此處現身的這位，曾經因為性別氣質問題，遭受身心霸凌的東冬侯溫，藉由一個典故，嘗試將自身安置其中：太魯閣族神話傳說中有位性別氣質特殊的神靈，宛如近代一位已經過世的，名叫「hagay」的男性族人，他曾打扮成女裝熱心公益參與部落事務。東冬侯溫的叔叔曾對他說過「hagay」的故事，而「hagay」這個名字，後來也成為他們族人之間，對於這類人的代稱。</p>
+    <p>值得肯定的是，東冬侯溫以表演為行動，以詩歌為方法，重新翻譯了自身兒少的苦痛。或許從《遊林驚夢》中，我們應該更認真的思考起，一百年來酷兒串連的行動，不僅再也不應該停留於服裝道具的層次。也應該是時候從「阿都主義」的小清新共好起身行動了。語言如何作用，詩歌從何飛起，遮蔽的情感能否得以翻譯並傳達，應該才是從事表演實踐的「hagay」們更為激進的目標。</p>
+    <h2>註釋</h2>
+    <p class="fn">1. 花蓮銅門部落現今作為祭場之用的環境，是一個自河谷隆起的平台，這個平台在更早之前曾是太魯閣族人的祖居地，當時的聚落，習慣將過世的親人埋葬家屋之下，因此直到部落居民遷居至河谷高處後，這塊地作為祖靈匯集之處，始終都是部落族人約定的默契。在此神聖的平台一角，有座只剩橋頭的吊橋，過去曾以鋼索掛流籠的形式，連接著河谷對岸的水圳瀑布（翡翠谷）。銅門部落中另有一座能夠開放步行的吊橋位於河谷上游方向不及1公里處，連接著北側的發電廠與南側的區域遙控中心（2014年已裁撤），兩處都屬台電資產。銅門水力發電廠由日本人建造，在1943年開始運轉，1945年因洪水沖毀而毀棄，可見其地勢凶險與水文條件特殊，在1952年由國民政府接管並重建後，成為台灣第一個地下化的水力發電廠，發電設備隱身於山腹之中，機組設備須經隧道抵達。花蓮坊間常見的「龍澗冰棒」販售點即在吊橋口，作為早期台灣國營企業典型文創紀念品，從糖廠、石油場、林場到電廠，東西南北各廠皆有員工親眷福利社銷售冰品。知名的慕谷慕魚河谷，位在河川上游方向2公里處以後，潭深險峻，已對外封閉多年。</p>
+    <h2>演出資訊</h2>
+    <p class="info">《遊林驚夢》　演出｜兒路創作藝術工寮　時間｜2022／06／24　地點｜花蓮銅門部落大祭場</p>
+  </article>
+
+  <nav class="pager">
+    <a class="prev" href="../../essays/light-art-festival-2022/"><small>較早一篇</small>等待、陪伴微希望：「光・舞弄・影—2022 臺灣國際光影藝術節」</a>
+    <a class="next" href="../../essays/xiaoshen-niji/"><small>較晚一篇</small>變得比夜更深：《消身匿跡》的互相依存</a>
+  </nav>
+
+<footer class="seal">
+  <img class="stamp" src="../../images/company/%E5%8A%89%E4%BA%AE%E5%BB%B6_%E7%AB%A0.png" alt="劉亮延">
+  lyliu.art　劇照著作權屬各攝影者所有
+</footer>
+</div>
+</body>
+</html>

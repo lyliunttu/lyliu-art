@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>馬伯司氏 Lady Macbeth｜劉亮延 劇作</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@300;400;600;700&display=swap">
+<style>
+:root{--measure:34rem;--wide:52rem;--fs:1.0625rem;--cinnabar:#A8453A;
+  --ink:#F3EFE6;--ink-2:#EAE5DA;--ink-3:#E3DDD0;--paper:#1F1B17;--paper-dim:#4C4740;--muted:#7A746B;
+  --gold:#8C6D3F;--gold-dim:#B39868;--rule:rgba(31,27,23,.14)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--paper);font-family:"Noto Serif TC","EB Garamond","Songti TC",serif;
+  font-size:var(--fs);line-height:1.95;font-feature-settings:"palt" 1;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--gold);text-underline-offset:.25em;text-decoration-thickness:.5px}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--cinnabar);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--measure);margin:0 auto;padding:0 1.35rem}
+section{padding:2.6rem 0}
+section+section{border-top:1px solid var(--rule)}
+.nav{display:flex;justify-content:space-between;align-items:baseline;padding:1.2rem 0 .9rem;border-bottom:1px solid var(--rule);
+  font-family:"Noto Sans TC",sans-serif;font-size:.74rem;letter-spacing:.16em;color:var(--muted)}
+.nav .home{color:var(--paper);text-decoration:none}
+.nav .home i{display:inline-block;width:.55em;height:.55em;background:var(--cinnabar);margin-right:.6em;vertical-align:.05em}
+.nav a{color:var(--muted);text-decoration:none}
+h1{font-size:1.75rem;font-weight:600;line-height:1.4;margin:0;letter-spacing:.04em}
+h1 .en{display:block;font-family:"EB Garamond",serif;font-style:italic;font-size:1.05rem;font-weight:400;color:var(--gold);letter-spacing:.02em;margin-top:.35rem}
+.eyebrow{font-family:"Noto Sans TC",sans-serif;font-size:.72rem;letter-spacing:.2em;color:var(--muted);margin:0 0 1rem}
+p{margin:0 0 1.05em;text-align:justify;overflow-wrap:break-word;line-break:strict}
+p:last-child{margin-bottom:0}
+p i,p em{font-family:"EB Garamond",serif;font-style:italic;font-size:1.04em}
+.lead{font-size:1.12rem;line-height:1.9}
+.pending{color:var(--cinnabar)}
+figure{margin:1.8rem 0}
+figure img{border-radius:1px;width:100%;object-fit:cover;background:var(--ink-2);color:transparent}
+figcaption{font-family:"Noto Sans TC",sans-serif;font-size:.74rem;line-height:1.75;color:var(--muted);margin-top:.7rem;text-align:center}
+figcaption b{color:var(--paper-dim);font-weight:500}
+footer{padding:3rem 0 4rem;text-align:center;color:var(--muted);font-family:"Noto Sans TC",sans-serif;font-size:.78rem;line-height:2;border-top:1px solid var(--rule);margin-top:2.6rem}
+footer .cjk{font-family:"Noto Serif TC",serif;font-size:1.5rem;letter-spacing:.5em;text-indent:.5em;color:var(--paper);margin-bottom:.5rem}
+footer .lat{font-family:"EB Garamond",serif;font-style:italic;font-size:1.05rem;color:var(--gold);margin-bottom:1.6rem}
+@media (min-width:46rem){:root{--fs:1.09rem}.wrap{padding:0 2rem}section{padding:3.4rem 0}}
+footer.seal .wm{width:min(22rem,88%);height:auto;margin:0 auto 1.4rem;display:block}
+footer.seal .stamp{width:5.2rem;height:auto;margin:0 auto 1.8rem;display:block}
+
+.band{display:none}
+@media (min-width:58rem){
+  body[data-desktop="wide"] .band{display:block;position:relative;width:var(--wide);max-width:calc(100vw - 4rem);left:50%;transform:translateX(-50%);margin:1.6rem 0 0}
+  .band img{width:100%;aspect-ratio:2500/480;object-fit:cover;display:block;border-radius:1px}
+  .band .cap{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.45)}
+  .band .cap b{color:#fff;font-family:"Noto Serif TC",serif;font-weight:500;font-size:1.9rem;letter-spacing:.22em;text-indent:.22em;line-height:1.3}
+  .band .cap small{font-family:"Noto Sans TC",sans-serif;font-size:.75rem;letter-spacing:.34em;text-indent:.34em;margin-top:.5rem}
+  body[data-desktop="wide"] .band ~ .head h1:not(.company){display:none}
+  body[data-desktop="wide"] .has-band .cover{display:none}
+}
+
+.cover{position:relative;margin:0 -1.35rem}
+.cover img{aspect-ratio:3/2}
+.cover img.portrait{object-position:50% 12%}
+.cover::after{content:"";position:absolute;inset:auto 0 0 0;height:30%;background:linear-gradient(to bottom,rgba(0,0,0,0),var(--ink))}
+.cover figcaption{position:absolute;left:1.35rem;bottom:.6rem;color:var(--paper-dim);letter-spacing:.06em;text-align:left;margin:0}
+.meta{padding-top:1.6rem}
+.badge{display:inline-block;font-family:"Noto Sans TC",sans-serif;font-size:.72rem;letter-spacing:.18em;color:var(--gold);
+  border:1px solid var(--gold-dim);padding:.4rem .7rem .35rem;border-radius:2px;line-height:1.4;margin-top:1.6rem}
+h1.title{margin-top:1.2rem}
+.credits{font-size:.97rem;line-height:1.85}
+.credits dl{margin:0;display:grid;grid-template-columns:5.6rem 1fr;gap:.5rem .9rem}
+.credits dt{font-family:"Noto Sans TC",sans-serif;font-size:.75rem;letter-spacing:.1em;color:var(--gold);padding-top:.3rem;line-height:1.7}
+.credits dd{margin:0}
+.review{margin:1.9rem 0 0}
+.review:first-of-type{margin-top:1.2rem}
+.review .cite{font-size:.99rem;line-height:1.8}
+.review .cite .src{font-family:"Noto Sans TC",sans-serif;font-size:.78rem;color:var(--muted);display:block}
+blockquote{margin:.6rem 0 0;padding-left:1rem;border-left:2px solid var(--gold-dim);font-size:.99rem;line-height:1.95;color:var(--paper-dim);font-style:italic}
+blockquote p{text-indent:0}
+.gallery figure img{aspect-ratio:3/2}
+.gallery figure.tall img{aspect-ratio:2/3}
+.eps{list-style:none;margin:1.3rem 0 0;padding:0}
+.eps li{border-top:1px solid var(--rule)}
+.eps li:last-child{border-bottom:1px solid var(--rule)}
+.eps a{display:flex;justify-content:space-between;align-items:baseline;gap:.7rem;padding:.7rem .35rem;font-size:.94rem;color:var(--paper);text-decoration:none;border-radius:2px}
+.eps a:hover{background:rgba(201,162,92,.10)}
+.eps .n{font-family:"Noto Sans TC",sans-serif;font-size:.74rem;letter-spacing:.1em;color:var(--gold)}
+.eps .d{font-family:"Noto Sans TC",sans-serif;font-size:.78rem;color:var(--muted);white-space:nowrap}
+.pager{display:flex;justify-content:space-between;gap:1rem;padding:1.4rem 0;font-family:"Noto Sans TC",sans-serif;font-size:.78rem;letter-spacing:.06em}
+.pager a{color:var(--muted);text-decoration:none}
+@media (min-width:46rem){.cover{margin:0 -2rem}.cover figcaption{left:2rem}}
+
+.credits dd .prog{font-family:"Noto Sans TC",sans-serif;font-size:.7rem;letter-spacing:.14em;color:var(--cinnabar);border:1px solid rgba(168,69,58,.4);padding:.12rem .45rem .08rem;border-radius:2px;text-decoration:none;margin-left:.6em;white-space:nowrap;vertical-align:.1em}
+.credits dd .prog:hover{background:rgba(168,69,58,.08)}
+.proglist{list-style:none;margin:1.2rem 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(8.6rem,1fr));gap:1.4rem 1.2rem}
+.proglist a{display:block;text-decoration:none;color:var(--paper)}
+.proglist img{width:100%;height:auto;aspect-ratio:auto;border-radius:1px;box-shadow:0 1px 5px rgba(31,27,23,.16);background:var(--ink-2)}
+.proglist .pt{display:block;font-size:.92rem;line-height:1.6;margin-top:.7rem;letter-spacing:.02em}
+.proglist .pm{display:block;font-family:"Noto Sans TC",sans-serif;font-size:.72rem;line-height:1.7;color:var(--muted);margin-top:.15rem}
+
+@media (min-width:58rem){
+  body[data-desktop="wide"] .cover,body[data-desktop="wide"] .gallery{width:var(--wide);max-width:calc(100vw - 4rem);position:relative;left:50%;transform:translateX(-50%);margin-left:0;margin-right:0}
+  body[data-desktop="wide"] .cover figcaption{left:.6rem}
+  body[data-desktop="wide"] .gallery{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;align-items:start}
+  body[data-desktop="wide"] .gallery figure{margin:0}
+  body[data-desktop="wide"] .gallery figure.tall{grid-row:span 2}
+  body[data-desktop="wide"] .gallery figure.tall img{aspect-ratio:2/3}
+  body[data-desktop="wide"] .gallery .eyebrow{grid-column:1/-1}
+}
+</style>
+</head>
+<body data-desktop="wide">
+<div class="wrap">
+<div class="nav">
+  <a class="home" href="../../"><i></i>劉亮延</a>
+  <a href="../../plays/">劇作 ／ 返回列表</a>
+</div>
+
+<section class="meta">
+  <figure class="cover">
+    <img class="portrait" src="../../images/plays/%E9%A6%AC%E4%BC%AF%E5%8F%B8%E6%B0%8F_01_%E4%B8%BB%E8%A6%96%E8%A6%BA_%E5%91%A8%E7%A7%91%E6%97%BB%E6%94%9D.jpg" alt="《馬伯司氏》演出劇照">
+    <figcaption>《馬伯司氏》2016　攝影 <b>周科旻</b></figcaption>
+  </figure>
+  <span class="badge">2016　爵士京劇獨角戲</span>
+  <h1 class="title">馬伯司氏<span class="en">Lady Macbeth</span></h1>
+</section>
+
+<section>
+  <p class="eyebrow">提要</p>
+  <p class="lead">以林紓駢文風格的莎劇譯本為底，取「家書」「夢遊」二折，北京京劇男旦劉欣然一人穿梭翻譯家、馬克白與馬克白夫人三個角色，探問角色背後的角色、決定背後的兩難。</p>
+</section>
+
+<section class="credits">
+  <p class="eyebrow">製作訊息</p>
+  <dl><dt>首演</dt><dd>2016 酷集劇場（辜公亮文教基金會，台北）首演</dd><dt>演出紀錄</dt><dd>2016 台北首演<br>2016/11/26-27 北京第三屆當代小劇場戲曲藝術節，繁星戲劇村<br>2017/3 淡水雲門劇場（雲門特仕版）<br>2019 上海東方藝術中心第十一屆東方名家名劇月</dd><dt>演員</dt><dd>劉欣然</dd><dt>製作群</dt><dd>編劇 導演 設計 劉亮延<br>音樂設計 柯智豪<br>劇照 周科旻</dd><dt>獎項</dt><dd>台新藝術獎季提名；第29屆傳藝金曲獎（2018）入圍：最佳跨界音樂專輯獎、最佳團體年度演出獎</dd><dt>出版發行</dt><dd>《馬伯司氏：劉欣然爵士京劇同名專輯》2018年發行。</dd></dl>
+</section>
+
+<section>
+  <p class="eyebrow">劇評</p>
+  <div class="review">
+    <div class="cite">汪俊彥〈還原京劇的兩種方式《易》＆《馬伯司氏》〉<span class="src">表演藝術評論台　2016/9/7</span></div>
+    <blockquote><p>還原京劇的任何形式本身即是作為劇場表演的一種，自然在面對不一樣的觀眾、不一樣的時代與劇場環境時，就帶著變異／易。</p></blockquote>
+  </div><div class="review">
+    <div class="cite">陳元棠〈過程與結果間的模糊地帶《易》＆《馬伯司氏》〉<span class="src">表演藝術評論台　2016/9/7</span></div>
+    <blockquote><p>劇本與歌詞的巧妙詩意，其中獨特的語感仍然討喜愉悅，尤以劇末的女巫調湯之歌甚有樂趣。</p></blockquote>
+  </div><div class="review">
+    <div class="cite">紀慧玲〈開展與收束《易》＆《馬伯司氏》〉<span class="src">表演藝術評論台　2016/9/9</span></div>
+    <blockquote><p>京腔的主導地位被取代了，劉欣然僅僅在演唱著，但依字行腔、樂器音色再托於其上形成的「腔」確實不見了。</p></blockquote>
+  </div><div class="review">
+    <div class="cite">林采韻<span class="src">台新藝術獎提名觀察人　出處與日期<span class="pending">待補</span></span></div>
+    <blockquote><p>劉欣然的編腔和柯智豪編創的音樂，如同兩條聲部線，它們時而分流，時而托襯對方，時而交叉融合。</p></blockquote>
+  </div><div class="review">
+    <div class="cite">蔡振家<span class="src">臺灣大學音樂學研究所副教授　出處與日期<span class="pending">待補</span></span></div>
+    <blockquote><p>若即若離的爵士京劇音樂產生了新的境界，或許是真正屬於二十一世紀的緊打慢唱吧！</p></blockquote>
+  </div>
+</section>
+
+<section class="gallery">
+  <p class="eyebrow">劇照</p>
+  <figure>
+    <img loading="lazy" src="../../images/plays/%E9%A6%AC%E4%BC%AF%E5%8F%B8%E6%B0%8F_02_%E5%91%A8%E7%A7%91%E6%97%BB%E6%94%9D.jpg" alt="《馬伯司氏》劇照">
+    <figcaption>《馬伯司氏》2016　攝影 <b>周科旻</b></figcaption>
+  </figure>
+  <figure>
+    <img loading="lazy" src="../../images/plays/%E9%A6%AC%E4%BC%AF%E5%8F%B8%E6%B0%8F_03_%E9%99%B3%E5%8F%88%E7%B6%AD%E6%94%9D.jpg" alt="《馬伯司氏》劇照">
+    <figcaption>《馬伯司氏》2016　攝影 <b>陳又維</b></figcaption>
+  </figure>
+  <figure>
+    <img loading="lazy" src="../../images/plays/%E9%A6%AC%E4%BC%AF%E5%8F%B8%E6%B0%8F_04_%E9%99%B3%E5%8F%88%E7%B6%AD%E6%94%9D.jpg" alt="《馬伯司氏》劇照">
+    <figcaption>《馬伯司氏》2016　攝影 <b>陳又維</b></figcaption>
+  </figure>
+  <figure class="tall">
+    <img loading="lazy" src="../../images/plays/%E9%A6%AC%E4%BC%AF%E5%8F%B8%E6%B0%8F_DM.jpg" alt="《馬伯司氏》DM">
+    <figcaption>《馬伯司氏》2016 演出DM</figcaption>
+  </figure>
+</section>
+
+<section>
+  <p class="eyebrow">延伸</p>
+  <ul class="eps"><li><a href="https://www.youtube.com/watch?v=OJ0bya782HA" rel="noopener"><span><span class="n">影片</span>　演出片段</span><span class="d">YouTube</span></a></li><li><a href="https://open.spotify.com/album/1d7ZS4hlH01cjb1qzy2KBH" rel="noopener"><span><span class="n">專輯</span>　馬伯司氏：劉欣然爵士京劇同名專輯</span><span class="d">Spotify</span></a></li><li><a href="https://music.apple.com/tw/album/1578243321" rel="noopener"><span><span class="n">專輯</span>　馬伯司氏：劉欣然爵士京劇同名專輯</span><span class="d">Apple Music</span></a></li><li><a href="https://blaireko.bandcamp.com/album/--22" rel="noopener"><span><span class="n">專輯</span>　馬伯司氏：劉欣然爵士京劇同名專輯</span><span class="d">Bandcamp</span></a></li></ul>
+</section>
+
+<div class="pager"><a href="../../plays/ian-tshing/">← 燕青　2016</a><a href="../../plays/sat-tsu-po/">殺子報　2016 →</a></div>
+
+<footer class="seal">
+  <img class="stamp" src="../../images/company/%E5%8A%89%E4%BA%AE%E5%BB%B6_%E7%AB%A0.png" alt="劉亮延">
+  lyliu.art　劇照著作權屬各攝影者所有
+</footer>
+</div>
+</body>
+</html>

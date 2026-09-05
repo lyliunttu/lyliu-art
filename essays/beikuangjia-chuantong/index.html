@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>被框架的「傳統」與「創新」｜劉亮延</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@300;400;600;700&display=swap">
+<style>
+:root{--measure:34rem;--wide:52rem;--fs:1.0625rem;--cinnabar:#A8453A;
+  --ink:#F3EFE6;--ink-2:#EAE5DA;--ink-3:#E3DDD0;--paper:#1F1B17;--paper-dim:#4C4740;--muted:#7A746B;
+  --gold:#8C6D3F;--gold-dim:#B39868;--rule:rgba(31,27,23,.14)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--paper);font-family:"Noto Serif TC","EB Garamond","Songti TC",serif;
+  font-size:var(--fs);line-height:1.95;font-feature-settings:"palt" 1;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--gold);text-underline-offset:.25em;text-decoration-thickness:.5px}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--cinnabar);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--measure);margin:0 auto;padding:0 1.35rem}
+section{padding:2.6rem 0}
+section+section{border-top:1px solid var(--rule)}
+.nav{display:flex;justify-content:space-between;align-items:baseline;padding:1.2rem 0 .9rem;border-bottom:1px solid var(--rule);
+  font-family:"Noto Sans TC",sans-serif;font-size:.74rem;letter-spacing:.16em;color:var(--muted)}
+.nav .home{color:var(--paper);text-decoration:none}
+.nav .home i{display:inline-block;width:.55em;height:.55em;background:var(--cinnabar);margin-right:.6em;vertical-align:.05em}
+.nav a{color:var(--muted);text-decoration:none}
+h1{font-size:1.75rem;font-weight:600;line-height:1.4;margin:0;letter-spacing:.04em}
+h1 .en{display:block;font-family:"EB Garamond",serif;font-style:italic;font-size:1.05rem;font-weight:400;color:var(--gold);letter-spacing:.02em;margin-top:.35rem}
+.eyebrow{font-family:"Noto Sans TC",sans-serif;font-size:.72rem;letter-spacing:.2em;color:var(--muted);margin:0 0 1rem}
+p{margin:0 0 1.05em;text-align:justify;overflow-wrap:break-word;line-break:strict}
+p:last-child{margin-bottom:0}
+p i,p em{font-family:"EB Garamond",serif;font-style:italic;font-size:1.04em}
+.lead{font-size:1.12rem;line-height:1.9}
+.pending{color:var(--cinnabar)}
+figure{margin:1.8rem 0}
+figure img{border-radius:1px;width:100%;object-fit:cover;background:var(--ink-2);color:transparent}
+figcaption{font-family:"Noto Sans TC",sans-serif;font-size:.74rem;line-height:1.75;color:var(--muted);margin-top:.7rem;text-align:center}
+figcaption b{color:var(--paper-dim);font-weight:500}
+footer{padding:3rem 0 4rem;text-align:center;color:var(--muted);font-family:"Noto Sans TC",sans-serif;font-size:.78rem;line-height:2;border-top:1px solid var(--rule);margin-top:2.6rem}
+footer .cjk{font-family:"Noto Serif TC",serif;font-size:1.5rem;letter-spacing:.5em;text-indent:.5em;color:var(--paper);margin-bottom:.5rem}
+footer .lat{font-family:"EB Garamond",serif;font-style:italic;font-size:1.05rem;color:var(--gold);margin-bottom:1.6rem}
+@media (min-width:46rem){:root{--fs:1.09rem}.wrap{padding:0 2rem}section{padding:3.4rem 0}}
+footer.seal .wm{width:min(22rem,88%);height:auto;margin:0 auto 1.4rem;display:block}
+footer.seal .stamp{width:5.2rem;height:auto;margin:0 auto 1.8rem;display:block}
+
+.band{display:none}
+@media (min-width:58rem){
+  body[data-desktop="wide"] .band{display:block;position:relative;width:var(--wide);max-width:calc(100vw - 4rem);left:50%;transform:translateX(-50%);margin:1.6rem 0 0}
+  .band img{width:100%;aspect-ratio:2500/480;object-fit:cover;display:block;border-radius:1px}
+  .band .cap{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.45)}
+  .band .cap b{color:#fff;font-family:"Noto Serif TC",serif;font-weight:500;font-size:1.9rem;letter-spacing:.22em;text-indent:.22em;line-height:1.3}
+  .band .cap small{font-family:"Noto Sans TC",sans-serif;font-size:.75rem;letter-spacing:.34em;text-indent:.34em;margin-top:.5rem}
+  body[data-desktop="wide"] .band ~ .head h1:not(.company){display:none}
+  body[data-desktop="wide"] .has-band .cover{display:none}
+}
+
+.cover{position:relative;margin:0 -1.35rem}
+.cover img{aspect-ratio:3/2}
+.cover img.portrait{object-position:50% 12%}
+.cover::after{content:"";position:absolute;inset:auto 0 0 0;height:30%;background:linear-gradient(to bottom,rgba(0,0,0,0),var(--ink))}
+.cover figcaption{position:absolute;left:1.35rem;bottom:.6rem;color:var(--paper-dim);letter-spacing:.06em;text-align:left;margin:0}
+.meta{padding-top:1.6rem}
+.badge{display:inline-block;font-family:"Noto Sans TC",sans-serif;font-size:.72rem;letter-spacing:.18em;color:var(--gold);
+  border:1px solid var(--gold-dim);padding:.4rem .7rem .35rem;border-radius:2px;line-height:1.4;margin-top:1.6rem}
+h1.title{margin-top:1.2rem}
+.credits{font-size:.97rem;line-height:1.85}
+.credits dl{margin:0;display:grid;grid-template-columns:5.6rem 1fr;gap:.5rem .9rem}
+.credits dt{font-family:"Noto Sans TC",sans-serif;font-size:.75rem;letter-spacing:.1em;color:var(--gold);padding-top:.3rem;line-height:1.7}
+.credits dd{margin:0}
+.review{margin:1.9rem 0 0}
+.review:first-of-type{margin-top:1.2rem}
+.review .cite{font-size:.99rem;line-height:1.8}
+.review .cite .src{font-family:"Noto Sans TC",sans-serif;font-size:.78rem;color:var(--muted);display:block}
+blockquote{margin:.6rem 0 0;padding-left:1rem;border-left:2px solid var(--gold-dim);font-size:.99rem;line-height:1.95;color:var(--paper-dim);font-style:italic}
+blockquote p{text-indent:0}
+.gallery figure img{aspect-ratio:3/2}
+.gallery figure.tall img{aspect-ratio:2/3}
+.eps{list-style:none;margin:1.3rem 0 0;padding:0}
+.eps li{border-top:1px solid var(--rule)}
+.eps li:last-child{border-bottom:1px solid var(--rule)}
+.eps a{display:flex;justify-content:space-between;align-items:baseline;gap:.7rem;padding:.7rem .35rem;font-size:.94rem;color:var(--paper);text-decoration:none;border-radius:2px}
+.eps a:hover{background:rgba(201,162,92,.10)}
+.eps .n{font-family:"Noto Sans TC",sans-serif;font-size:.74rem;letter-spacing:.1em;color:var(--gold)}
+.eps .d{font-family:"Noto Sans TC",sans-serif;font-size:.78rem;color:var(--muted);white-space:nowrap}
+.pager{display:flex;justify-content:space-between;gap:1rem;padding:1.4rem 0;font-family:"Noto Sans TC",sans-serif;font-size:.78rem;letter-spacing:.06em}
+.pager a{color:var(--muted);text-decoration:none}
+@media (min-width:46rem){.cover{margin:0 -2rem}.cover figcaption{left:2rem}}
+
+.head{padding:2.6rem 0 0}
+.head p{font-family:"Noto Sans TC",sans-serif;font-size:.78rem;letter-spacing:.08em;color:var(--muted);margin:1.1rem 0 0;line-height:1.9;text-align:left}
+.jump{display:flex;gap:.5rem;margin:1.4rem 0 0;padding:0 0 2.4rem;list-style:none;flex-wrap:wrap}
+.jump a{display:inline-block;font-family:"Noto Sans TC",sans-serif;font-size:.74rem;letter-spacing:.14em;color:var(--cinnabar);border:1px solid rgba(168,69,58,.4);padding:.34rem .7rem .3rem;border-radius:2px;text-decoration:none;line-height:1.5}
+.jump a:hover{background:rgba(168,69,58,.08)}
+.decade{display:flex;align-items:baseline;gap:.9rem;padding:2.2rem 0 .9rem;border-top:1px solid var(--rule)}
+.decade h2{margin:0;font-family:"EB Garamond",serif;font-size:1.5rem;font-weight:500;letter-spacing:.04em;color:var(--paper-dim);font-variant-numeric:tabular-nums}
+.decade span{font-family:"Noto Sans TC",sans-serif;font-size:.72rem;letter-spacing:.16em;color:var(--muted)}
+.list{list-style:none;margin:0;padding:0}
+.list li{border-top:1px solid var(--rule)}
+.list li:last-child{border-bottom:1px solid var(--rule)}
+.item{display:grid;grid-template-columns:4.6rem 1fr;gap:1rem;padding:1.1rem .2rem;text-decoration:none;color:var(--paper)}
+.item:hover{background:rgba(140,109,63,.07)}
+.thumb{width:4.6rem;height:4.6rem;background:var(--ink-2);border-radius:1px;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;color:transparent}
+.thumb.none{display:flex;align-items:center;justify-content:center;font-family:"Noto Sans TC",sans-serif;font-size:.66rem;letter-spacing:.1em;color:var(--muted);text-align:center;line-height:1.5;background:var(--ink-3)}
+.year{font-family:"EB Garamond",serif;font-size:.92rem;letter-spacing:.08em;color:var(--gold);font-variant-numeric:tabular-nums;display:block;line-height:1.6}
+.t{font-size:1.16rem;font-weight:600;line-height:1.55;letter-spacing:.03em;display:block;text-wrap:balance}
+.t em{font-family:"EB Garamond",serif;font-style:italic;font-weight:400;font-size:.92rem;color:var(--paper-dim);letter-spacing:.02em;margin-left:.5em}
+.m{font-family:"Noto Sans TC",sans-serif;font-size:.76rem;line-height:1.85;color:var(--muted);margin-top:.3rem;display:block}
+.m b{font-weight:400;color:var(--paper-dim)}
+
+.item.ess{grid-template-columns:2.6rem 1fr;gap:.9rem}
+.no{font-family:"EB Garamond",serif;font-size:1.1rem;letter-spacing:.04em;color:var(--gold);font-variant-numeric:tabular-nums;line-height:1.55;padding-top:.05rem}
+.t.ess{font-size:1.08rem;font-weight:600;line-height:1.6;color:var(--paper);text-decoration:none}
+a.t.ess:hover{color:var(--gold)}
+.item.ess:hover{background:none}
+.m .ext{white-space:nowrap;text-decoration-thickness:.5px}
+.cat{display:inline-block;font-family:"Noto Sans TC",sans-serif;font-size:.68rem;letter-spacing:.14em;color:var(--gold);border:1px solid var(--gold-dim);padding:.1rem .45rem .05rem;border-radius:2px;line-height:1.5;margin-right:.5rem;vertical-align:.1em;font-weight:400}
+.cat.k2{color:var(--muted);border-color:rgba(122,116,107,.5)}
+.m a{color:var(--gold)}
+.m .ext{white-space:nowrap}
+.m .stub{color:var(--muted);font-style:normal}
+.yr{display:flex;align-items:baseline;gap:.9rem;padding:2rem 0 .7rem;border-top:1px solid var(--rule)}
+.yr h2{margin:0;font-family:"EB Garamond",serif;font-size:1.35rem;font-weight:500;letter-spacing:.04em;color:var(--paper-dim);font-variant-numeric:tabular-nums}
+.yr span{font-family:"Noto Sans TC",sans-serif;font-size:.72rem;letter-spacing:.16em;color:var(--muted)}
+.list li.stub .item{color:var(--paper-dim)}
+.list li.stub .item:hover{background:none}
+/* 內頁 */
+.ehead{padding:2.6rem 0 0}
+.ehead h1{font-size:1.55rem;line-height:1.5;text-wrap:balance}
+.ehead .meta{font-family:"Noto Sans TC",sans-serif;font-size:.78rem;letter-spacing:.06em;color:var(--muted);line-height:1.9;margin:1.1rem 0 0;padding:0;text-align:left}
+.ehead .meta a{color:var(--gold)}
+.ehead .meta b{font-weight:400;color:var(--paper-dim)}
+.enote{font-family:"Noto Sans TC",sans-serif;font-size:.76rem;line-height:1.85;color:var(--muted);margin:1rem 0 0;padding:.7rem .9rem;border-left:2px solid var(--gold-dim);text-align:left}
+article{padding:2.4rem 0 1rem}
+article p{text-indent:0}
+article h2{font-size:1.08rem;font-weight:600;letter-spacing:.06em;margin:2.2rem 0 .9rem;line-height:1.6}
+article h2:first-child{margin-top:0}
+article .byline{font-family:"Noto Sans TC",sans-serif;font-size:.8rem;letter-spacing:.06em;color:var(--muted);text-align:left}
+article .fn{font-size:.9rem;line-height:1.85;color:var(--paper-dim);text-align:left;margin-bottom:.7em}
+article .info{font-family:"Noto Sans TC",sans-serif;font-size:.8rem;line-height:1.9;color:var(--paper-dim);text-align:left}
+article .sig{text-align:right;color:var(--paper-dim);font-size:.95rem}
+article sup{font-family:"EB Garamond",serif;font-size:.7em;color:var(--gold);line-height:0;margin-left:.1em}
+article[lang="ja"]{font-family:"Noto Serif TC","Hiragino Mincho ProN","Yu Mincho",serif}
+.pager{border-top:1px solid var(--rule)}
+.pager a{display:block;color:var(--paper);max-width:46%}
+.pager a small{display:block;color:var(--muted);letter-spacing:.14em;margin-bottom:.2rem}
+.pager a.next{text-align:right}
+</style>
+</head>
+<body data-desktop="wide">
+<div class="wrap">
+<div class="nav">
+    <a class="home" href="../../"><i></i>劉亮延</a>
+    <a href="../../essays/">評論散文</a>
+  </div>
+
+  <header class="ehead">
+    <p class="eyebrow">評論散文　20　散文．專欄</p>
+    <h1>被框架的「傳統」與「創新」</h1>
+    <p class="meta"><b>上海戲劇，第九期</b>　2010</p>
+    <p class="enote">pp.8-9</p>
+  </header>
+
+  <article lang="zh-Hant">
+    <p>在台灣，戲曲改編話劇，可以說緊緊扣連著「創新」這個觀念，從話劇劇本改編出來的戲曲，雖主要以當代傳奇劇場從希臘悲劇，莎士比亞，貝克特，契可夫等西方文學經典的改編為代表。但，除了把話劇劇本改成戲曲之外，台灣的戲曲發展還有其他各種各樣的改編來源，例如電影（如《梁祝》），音樂劇（如《歌劇魅影》），乃至現代小說（如《金鎖記》），人物傳記，其他戲曲劇種的經典戲等。</p>
+    <p>對於這樣一個問題，筆者想提出一個比較靠近跨文化脈絡的看法。也就是從文化所發展的環境，多元的因素，以及政治性的操控等面向上去展開當代戲曲「改編」此一問題在「觀念」層次上的三個脈絡。</p>
+    <h2>一，從小劇場運動的觀點</h2>
+    <p>透過這個觀點看台灣戲曲的創新發展，首先要釐清一個相當關鍵的轉折點。1979年由汪其楣發起，連續舉辦五屆的「實驗劇展」，以及1980年由吳靜吉創立的「蘭陵劇坊」。台灣的戲劇學者鍾明德，將80年代的這波浪潮統稱為「小劇場運動」。針對蘭陵著名的作品《荷珠新配》，段馨君曾指出，80年代台灣的小劇場運動，在戲劇現代化的層次上，很具體地意識到了傳統戲曲與現代戲劇之界限，並且重新讓漸漸沒落的京劇重新受到重視。</p>
+    <p>筆者認為，這樣一個「重新重視」的觀點，可以恰恰與台灣1970-1980之間政治與經濟環境改變產生緊密關係，在這樣個思潮下，「傳統」漸漸演變成了遙遠的中國與現實的地方，兩個似是而非交錯擺盪的浪漫主義。引起了文學（鄉土文學論戰），表演藝術（小劇場運動），美術（素人藝術）等豐沛而影響深遠的創作能量。</p>
+    <p>當代傳奇劇場的靈魂人物吳興國，1953年生，在他1986年創立劇團之前，是軍系陸光國劇隊的文武老生演員，大學時期演出雲門舞集多部作品。就在80年代初期小劇場運動熱烈展開之際，他可以說是當時受到影響與啟發的大學生。《荷珠新配》，《白蛇傳》等「向傳統吸取養分」的成功大製作，讓青年熱情的大學生展開改革抱負。他重新開始思考傳統戲曲與時代改變的問題，當代傳奇劇場的創立，段馨君指出，可以說是當時知識份子思潮下的產物。對於戲曲內部而言年輕演員來說，他們需要尋求新的市場吸引力，對於蓬勃的留洋回國的文藝知識份子，甚至是受到國民黨中華文化復興運動而對台灣經濟起飛充滿理想的，他們需要從西方經典來認識自己的文化。</p>
+    <p>80年代，從這個角度上來看，正是台灣戰後留學生畢業回國的黃金時代，思鄉並且充滿抱負，但30年後回頭看，當時的「鄉」到底是什麼，變成了一個相當有趣的問題。我們甚至可以這樣說，回顧這個30年的劇場發展，給予我們某種程度上，去接受「鄉」之流動與不穩定性的可能。</p>
+    <h2>二，從東亞現代化的角度</h2>
+    <p>十九世紀末到二十世紀初期，日本明治時代，在「言文一致」、「新劇」等現代化政策脈絡下，日本傳統歌舞伎也出現改革運動。當時最著名的歌舞伎演員，市川團十郎九代目（1838～1903），主要以「荒事」角色走紅，他為突破以往傳統禁忌，竟也演出女性角色「女形」，並造成空前轟動。他對於文明與進步的主張與身體力行，打破了歌舞伎傳統中，女形是真實世界裡的另一種（第三種）性別的框架。從日本傳統戲劇的現代化過程中，我們發現，30年後，他的改革成就在歌舞伎內部又被改革了一次，透露出日本現代化的果實，在大正時期的逸樂之後，導向了國族主義的線索。</p>
+    <p>1930年代著名的歌舞伎演員市川猿之助三代目，所提出的歌舞伎復古運動，恰好驗證了對於30年前，由團十郎九代目主張的歌舞伎「精緻化」「現代專業化」等現代化專業分工訴求的批判。而這樣的革新派批判之聲，乃架構在日本戰前獨特的社會國族主義意識形態之下。</p>
+    <p>從日本傳統戲劇的改革脈絡，筆者要指出的是，日本戰後，在反美聲浪與學生運動浪潮中興起的前衛戲劇運動，便曾有過大量的西方經典與日本傳統戲劇改編挪用的現象。作為又一次的改革，以劇場導演鈴木忠志為例，早在1970年代，美國對於亞洲傳統戲劇的理解，便是透過莎士比亞改編而展開的。雖然從表演研究的角度來看，「鈴木法」的重要性在於，從傳統能劇中吸取養分，並將許多能劇中的身體技術整理成一套演員訓練法，以獨一無二的日本的方式，演出希臘悲劇或莎士比亞。</p>
+    <p>但我們懷疑的是，從整個東亞全球化的觀點來看，用傳統的技法演出西方經典劇本，不正意味著「傳統」便是「形式」，以及透過現代之眼去看見的「傳統」的可攜便利性？猛一反思，這個問題恰好也適用於台灣的戲曲創新／戲曲改編話劇歷程，甚至就是其中不可躲避的一個麻煩。</p>
+    <p>台灣的戲劇現代化，從清末與日本薩摩蕃走私通商頻繁時期，中國五四運動，到日本殖民，以及戰後鈴木忠志等知識份子的前衛運動，思考這幾個轉折點，我們都可以發現一個相當有趣的現象。一個夾存在中國與日本兩個巨大文明之間的相互折射的現象。在70年代的台灣本土意識開始發展之初，前文提到的領導台灣小劇場運動的年輕的知識份子，當時並不知道台灣早在1950年代，已經有批日本教育長大，相當熟悉「新劇」，卻回到中國大陸追隨田漢戲劇改革大旗的前行者。</p>
+    <p>思考日本這個針對著傳統因素而展開的「創新」的脈絡，我們會發現，台灣在戲曲上改變與創新的啟發，與日本的脈動有必然關係。甚至，無論是從日本的脈絡，還是從中國的脈絡，我們皆可找出更多前行者的創舉。創新是什麼意思，在20世紀戲劇發展的過程中變得不再浪漫而單純。為此，筆者希望提出一個批判的對象與視角。</p>
+    <h2>三，從台灣主流的戲曲創新的論述角度</h2>
+    <p>台灣重要的戲曲學者王安祈，自80年代起影響著整個台灣內部的戲曲創新論述。以她的論點來看，台灣的京劇革新，應該朔源到京劇演員郭小莊1979年成立的「雅音小集」。王的論點乃不從小劇場運動來談吳興國，而是從台灣京劇發展歷程來看吳興國。王曾指出郭小莊的創新，在於出現了強調肢體，裝扮等的「女性自覺」，這是一種質的改變。在形式上，郭小莊第一次把京劇搬進鏡框舞台，運用大量國樂與舞台佈景。而吳興國則是在這個水平上大膽改編西方劇本，要讓非京劇愛好者進劇場觀賞新形態的京劇。</p>
+    <p>但筆者認為，這其中暗示著一種適者生存的市場進化論觀點。也就是手拿刻著京劇式微的新碑，將京劇的發展武斷地導向某種不可式微的邏輯結構中。再加上所針對的主題是「創新」時，京劇式微一事便直接連結上了用創新來解決的觀念。透過這種「創新」，京劇藝術可以不式微，可以推廣與保存，乃至鼓勵。筆者注意到的不是她們的口號與作品，而是「式微」這樣一種觀念乃奠基在物競天擇的焦慮感中。是因為怕被淘汰而生出的頹廢感。這種唯恐淘汰之感，來自於進化論的認識方式。它本身與明清戲曲鼎盛時期的市民經濟社會無關。而是一個起源自科學啟蒙，工業革命脈絡的社會文化認識。</p>
+    <p>我們認為，物競天擇說發展成了種族優生學，文化危機論必難逃經典正宗論。當「創新」的旗子被插在式微的戲曲市場時，其背後案已經有了極權主義的政治性結構。透過京劇式微，創新／推廣／保存變成動機與原因。那便是將傳統封建社會的市民經濟模式，套用上了適者生存的進化論觀點。但這與歷史發展的事實是有所倒逆的，在於200年前的戲曲鼎盛時代，本無涉於此一邏輯。</p>
+    <p>於是，到底是改編了沒有？創新了沒有？乃至對於創新行動的合理化論述，在這樣的邏輯檢查之下，便成為一個關鍵問題。而至於如何創新，如何改編，如何從藝術文化的資源中繼續發展下去，始終都懸而未決。</p>
+    <p>1973年雲門舞集成立，1975年推出舞作《白蛇傳》，吳興國當時參與演出。1979年雅音小集成立，為了紀念俞大綱先生逝世二週年，推出改版的《白蛇與許仙》，首演造成轟動。根據當時的報刊資料，青年演員郭小莊就讀大學三年級，她組團推新戲的目標是「吸引年輕人」。1986年當代傳奇劇場創立，推出著名的創團作《慾望城國》，改編自莎士比亞《馬克白》，由京劇演員吳興國，魏海敏演出一對執迷於權利而圖謀叛亂失心癲狂的夫妻。該劇用京劇形式改編莎士比亞劇本，在1986年的台灣是個創舉。</p>
+    <p>我們發現，80年代從事表演藝術的台灣的年輕藝術家，都與京劇（當時叫平劇）有深厚關係，從傳統吸取養分，以及吸引年輕觀眾，這二個觀念是相當普遍的口號。而值得反省的是，這兩個從事表演藝術創作的觀念，到了2010年的今天，還是一樣的反覆被唱頌。雲門舞集從京劇形體走向太極導引，雅音小集已經不再運作，剩下當代傳奇劇場仍然持續用京劇／昆劇改編西方經典話劇劇本。軍系京劇團合併成了國光劇團，雖不走西方話劇劇本的路線，但近幾年也都年年推出新編京劇。從某個角度來看，不知道是什麼時候開始，這種年年推出的新編戲曲，無論是被框架在台灣歌仔戲，京劇，昆劇，客家戲等類型上，在專業配制的人員安排下（動作設計，編腔，編曲，指揮，樂手，演員）儼然就是官辦的百老匯音樂劇。一種具有某戲曲風格的音樂劇。</p>
+    <p>有許多時候，看完這種東方色彩濃厚的音樂劇，筆者常常反省，既然我們雖無法回到那個表演全由演員「提純」的時代，而我們仍必須使用中文，並對戲曲有所偏執愛好，那麼我們是否更應該試著回歸到某些內部的問題面上思考與行動。不是為了某種文化政策觀點上的吸引年輕人或提倡正當文化活動，也不是要保存什麼死去的文化遺產。總是有什麼契機可以打開其內部，而有可能出自於後現代生活的均質化與膚淺，戲曲藝術內部的細微差異問題，體驗問題，養成問題等就足以支持一個藝術創作者進行長時間的探索與提問。往往因為觀眾接受度，或創編人才匱乏，而呈現了所謂「大路子」的改編作品後，還變本加厲去營造某種戲曲正宗／創新正宗的政治性權威感，能無恐有人去樓空的危機嗎？</p>
+    <p>再者，有另一種歷史研究的聲音對於當代戲曲的「改編」採取批判態度，這個觀點上朔到清末，從尚小雲（1900-1976），汪笑儂（1858-1918）等京劇演員的突破性思維，來驗證戲曲的革新早就不是新鮮事。對於這樣的看法，若僅止於一個歷史研究的角度，那確實提供了不一樣的視野。但若用100年前的成就，來評量當代戲曲發生中的變動，筆者是無法滿足的。</p>
+    <p>在台灣，比較令人悲觀的是，無論是新編的或是改編的，雖30餘年來強打以「吸引年輕觀眾」為口號，為了維護並且永續經營文化資產。但，實際上多是看誰有資源宣傳與營造諸般口號。戲曲作品推出時的票房好壞，往往多是錢與權利的舞台。對於奠基在演員號召力上，整合音樂／肢體／文學／設計的戲曲藝術，除了台灣歌仔戲還僅存有類似的可能性以外，我們必須悲觀的表示，就連有穩定觀眾支持的歌仔戲名角，也都要遭遇年年推新戲，二個月學一個新的唱腔形體，然後最多演出10場。這樣種惡性循環的宿命。甚至，有許多素質良好的戲曲觀眾，已經對於五花八門綜藝秀般的新編劇碼感到不耐。回顧30年前，一批留學回國的年輕藝術家，興沖沖地把京劇與歌仔戲推上鏡框舞台，以西方歌劇作為標竿，以現代劇場鏡框舞台為理想，並且認定了這就是一種文明進步。現在來看，台灣戲曲的製作水平或許達到了歌劇與音樂劇的進化想像，但猛一細想似乎更像墳場。在一個必須倚靠強大政治勢力支撐的氧氣面罩下，有些活著，而有些早就死去。</p>
+    <p class="sig">（原刊《上海戲劇》月刊，2010年9月號）</p>
+  </article>
+
+  <nav class="pager">
+    <a class="prev" href="../../essays/hei-se-guan-yin-shi/"><small>較早一篇</small>黑色觀音石：《牡丹刑》自序</a>
+    <span></span>
+  </nav>
+
+<footer class="seal">
+  <img class="stamp" src="../../images/company/%E5%8A%89%E4%BA%AE%E5%BB%B6_%E7%AB%A0.png" alt="劉亮延">
+  lyliu.art　劇照著作權屬各攝影者所有
+</footer>
+</div>
+</body>
+</html>

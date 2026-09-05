@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anna Maria 的古董舊貨店｜劉亮延</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@300;400;600;700&display=swap">
+<style>
+:root{--measure:34rem;--wide:52rem;--fs:1.0625rem;--cinnabar:#A8453A;
+  --ink:#F3EFE6;--ink-2:#EAE5DA;--ink-3:#E3DDD0;--paper:#1F1B17;--paper-dim:#4C4740;--muted:#7A746B;
+  --gold:#8C6D3F;--gold-dim:#B39868;--rule:rgba(31,27,23,.14)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--paper);font-family:"Noto Serif TC","EB Garamond","Songti TC",serif;
+  font-size:var(--fs);line-height:1.95;font-feature-settings:"palt" 1;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--gold);text-underline-offset:.25em;text-decoration-thickness:.5px}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--cinnabar);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--measure);margin:0 auto;padding:0 1.35rem}
+section{padding:2.6rem 0}
+section+section{border-top:1px solid var(--rule)}
+.nav{display:flex;justify-content:space-between;align-items:baseline;padding:1.2rem 0 .9rem;border-bottom:1px solid var(--rule);
+  font-family:"Noto Sans TC",sans-serif;font-size:.74rem;letter-spacing:.16em;color:var(--muted)}
+.nav .home{color:var(--paper);text-decoration:none}
+.nav .home i{display:inline-block;width:.55em;height:.55em;background:var(--cinnabar);margin-right:.6em;vertical-align:.05em}
+.nav a{color:var(--muted);text-decoration:none}
+h1{font-size:1.75rem;font-weight:600;line-height:1.4;margin:0;letter-spacing:.04em}
+h1 .en{display:block;font-family:"EB Garamond",serif;font-style:italic;font-size:1.05rem;font-weight:400;color:var(--gold);letter-spacing:.02em;margin-top:.35rem}
+.eyebrow{font-family:"Noto Sans TC",sans-serif;font-size:.72rem;letter-spacing:.2em;color:var(--muted);margin:0 0 1rem}
+p{margin:0 0 1.05em;text-align:justify;overflow-wrap:break-word;line-break:strict}
+p:last-child{margin-bottom:0}
+p i,p em{font-family:"EB Garamond",serif;font-style:italic;font-size:1.04em}
+.lead{font-size:1.12rem;line-height:1.9}
+.pending{color:var(--cinnabar)}
+figure{margin:1.8rem 0}
+figure img{border-radius:1px;width:100%;object-fit:cover;background:var(--ink-2);color:transparent}
+figcaption{font-family:"Noto Sans TC",sans-serif;font-size:.74rem;line-height:1.75;color:var(--muted);margin-top:.7rem;text-align:center}
+figcaption b{color:var(--paper-dim);font-weight:500}
+footer{padding:3rem 0 4rem;text-align:center;color:var(--muted);font-family:"Noto Sans TC",sans-serif;font-size:.78rem;line-height:2;border-top:1px solid var(--rule);margin-top:2.6rem}
+footer .cjk{font-family:"Noto Serif TC",serif;font-size:1.5rem;letter-spacing:.5em;text-indent:.5em;color:var(--paper);margin-bottom:.5rem}
+footer .lat{font-family:"EB Garamond",serif;font-style:italic;font-size:1.05rem;color:var(--gold);margin-bottom:1.6rem}
+@media (min-width:46rem){:root{--fs:1.09rem}.wrap{padding:0 2rem}section{padding:3.4rem 0}}
+footer.seal .wm{width:min(22rem,88%);height:auto;margin:0 auto 1.4rem;display:block}
+footer.seal .stamp{width:5.2rem;height:auto;margin:0 auto 1.8rem;display:block}
+
+.band{display:none}
+@media (min-width:58rem){
+  body[data-desktop="wide"] .band{display:block;position:relative;width:var(--wide);max-width:calc(100vw - 4rem);left:50%;transform:translateX(-50%);margin:1.6rem 0 0}
+  .band img{width:100%;aspect-ratio:2500/480;object-fit:cover;display:block;border-radius:1px}
+  .band .cap{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.45)}
+  .band .cap b{color:#fff;font-family:"Noto Serif TC",serif;font-weight:500;font-size:1.9rem;letter-spacing:.22em;text-indent:.22em;line-height:1.3}
+  .band .cap small{font-family:"Noto Sans TC",sans-serif;font-size:.75rem;letter-spacing:.34em;text-indent:.34em;margin-top:.5rem}
+  body[data-desktop="wide"] .band ~ .head h1:not(.company){display:none}
+  body[data-desktop="wide"] .has-band .cover{display:none}
+}
+
+.cover{position:relative;margin:0 -1.35rem}
+.cover img{aspect-ratio:3/2}
+.cover img.portrait{object-position:50% 12%}
+.cover::after{content:"";position:absolute;inset:auto 0 0 0;height:30%;background:linear-gradient(to bottom,rgba(0,0,0,0),var(--ink))}
+.cover figcaption{position:absolute;left:1.35rem;bottom:.6rem;color:var(--paper-dim);letter-spacing:.06em;text-align:left;margin:0}
+.meta{padding-top:1.6rem}
+.badge{display:inline-block;font-family:"Noto Sans TC",sans-serif;font-size:.72rem;letter-spacing:.18em;color:var(--gold);
+  border:1px solid var(--gold-dim);padding:.4rem .7rem .35rem;border-radius:2px;line-height:1.4;margin-top:1.6rem}
+h1.title{margin-top:1.2rem}
+.credits{font-size:.97rem;line-height:1.85}
+.credits dl{margin:0;display:grid;grid-template-columns:5.6rem 1fr;gap:.5rem .9rem}
+.credits dt{font-family:"Noto Sans TC",sans-serif;font-size:.75rem;letter-spacing:.1em;color:var(--gold);padding-top:.3rem;line-height:1.7}
+.credits dd{margin:0}
+.review{margin:1.9rem 0 0}
+.review:first-of-type{margin-top:1.2rem}
+.review .cite{font-size:.99rem;line-height:1.8}
+.review .cite .src{font-family:"Noto Sans TC",sans-serif;font-size:.78rem;color:var(--muted);display:block}
+blockquote{margin:.6rem 0 0;padding-left:1rem;border-left:2px solid var(--gold-dim);font-size:.99rem;line-height:1.95;color:var(--paper-dim);font-style:italic}
+blockquote p{text-indent:0}
+.gallery figure img{aspect-ratio:3/2}
+.gallery figure.tall img{aspect-ratio:2/3}
+.eps{list-style:none;margin:1.3rem 0 0;padding:0}
+.eps li{border-top:1px solid var(--rule)}
+.eps li:last-child{border-bottom:1px solid var(--rule)}
+.eps a{display:flex;justify-content:space-between;align-items:baseline;gap:.7rem;padding:.7rem .35rem;font-size:.94rem;color:var(--paper);text-decoration:none;border-radius:2px}
+.eps a:hover{background:rgba(201,162,92,.10)}
+.eps .n{font-family:"Noto Sans TC",sans-serif;font-size:.74rem;letter-spacing:.1em;color:var(--gold)}
+.eps .d{font-family:"Noto Sans TC",sans-serif;font-size:.78rem;color:var(--muted);white-space:nowrap}
+.pager{display:flex;justify-content:space-between;gap:1rem;padding:1.4rem 0;font-family:"Noto Sans TC",sans-serif;font-size:.78rem;letter-spacing:.06em}
+.pager a{color:var(--muted);text-decoration:none}
+@media (min-width:46rem){.cover{margin:0 -2rem}.cover figcaption{left:2rem}}
+
+.head{padding:2.6rem 0 0}
+.head p{font-family:"Noto Sans TC",sans-serif;font-size:.78rem;letter-spacing:.08em;color:var(--muted);margin:1.1rem 0 0;line-height:1.9;text-align:left}
+.jump{display:flex;gap:.5rem;margin:1.4rem 0 0;padding:0 0 2.4rem;list-style:none;flex-wrap:wrap}
+.jump a{display:inline-block;font-family:"Noto Sans TC",sans-serif;font-size:.74rem;letter-spacing:.14em;color:var(--cinnabar);border:1px solid rgba(168,69,58,.4);padding:.34rem .7rem .3rem;border-radius:2px;text-decoration:none;line-height:1.5}
+.jump a:hover{background:rgba(168,69,58,.08)}
+.decade{display:flex;align-items:baseline;gap:.9rem;padding:2.2rem 0 .9rem;border-top:1px solid var(--rule)}
+.decade h2{margin:0;font-family:"EB Garamond",serif;font-size:1.5rem;font-weight:500;letter-spacing:.04em;color:var(--paper-dim);font-variant-numeric:tabular-nums}
+.decade span{font-family:"Noto Sans TC",sans-serif;font-size:.72rem;letter-spacing:.16em;color:var(--muted)}
+.list{list-style:none;margin:0;padding:0}
+.list li{border-top:1px solid var(--rule)}
+.list li:last-child{border-bottom:1px solid var(--rule)}
+.item{display:grid;grid-template-columns:4.6rem 1fr;gap:1rem;padding:1.1rem .2rem;text-decoration:none;color:var(--paper)}
+.item:hover{background:rgba(140,109,63,.07)}
+.thumb{width:4.6rem;height:4.6rem;background:var(--ink-2);border-radius:1px;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;color:transparent}
+.thumb.none{display:flex;align-items:center;justify-content:center;font-family:"Noto Sans TC",sans-serif;font-size:.66rem;letter-spacing:.1em;color:var(--muted);text-align:center;line-height:1.5;background:var(--ink-3)}
+.year{font-family:"EB Garamond",serif;font-size:.92rem;letter-spacing:.08em;color:var(--gold);font-variant-numeric:tabular-nums;display:block;line-height:1.6}
+.t{font-size:1.16rem;font-weight:600;line-height:1.55;letter-spacing:.03em;display:block;text-wrap:balance}
+.t em{font-family:"EB Garamond",serif;font-style:italic;font-weight:400;font-size:.92rem;color:var(--paper-dim);letter-spacing:.02em;margin-left:.5em}
+.m{font-family:"Noto Sans TC",sans-serif;font-size:.76rem;line-height:1.85;color:var(--muted);margin-top:.3rem;display:block}
+.m b{font-weight:400;color:var(--paper-dim)}
+
+.item.ess{grid-template-columns:2.6rem 1fr;gap:.9rem}
+.no{font-family:"EB Garamond",serif;font-size:1.1rem;letter-spacing:.04em;color:var(--gold);font-variant-numeric:tabular-nums;line-height:1.55;padding-top:.05rem}
+.t.ess{font-size:1.08rem;font-weight:600;line-height:1.6;color:var(--paper);text-decoration:none}
+a.t.ess:hover{color:var(--gold)}
+.item.ess:hover{background:none}
+.m .ext{white-space:nowrap;text-decoration-thickness:.5px}
+.cat{display:inline-block;font-family:"Noto Sans TC",sans-serif;font-size:.68rem;letter-spacing:.14em;color:var(--gold);border:1px solid var(--gold-dim);padding:.1rem .45rem .05rem;border-radius:2px;line-height:1.5;margin-right:.5rem;vertical-align:.1em;font-weight:400}
+.cat.k2{color:var(--muted);border-color:rgba(122,116,107,.5)}
+.m a{color:var(--gold)}
+.m .ext{white-space:nowrap}
+.m .stub{color:var(--muted);font-style:normal}
+.yr{display:flex;align-items:baseline;gap:.9rem;padding:2rem 0 .7rem;border-top:1px solid var(--rule)}
+.yr h2{margin:0;font-family:"EB Garamond",serif;font-size:1.35rem;font-weight:500;letter-spacing:.04em;color:var(--paper-dim);font-variant-numeric:tabular-nums}
+.yr span{font-family:"Noto Sans TC",sans-serif;font-size:.72rem;letter-spacing:.16em;color:var(--muted)}
+.list li.stub .item{color:var(--paper-dim)}
+.list li.stub .item:hover{background:none}
+/* 內頁 */
+.ehead{padding:2.6rem 0 0}
+.ehead h1{font-size:1.55rem;line-height:1.5;text-wrap:balance}
+.ehead .meta{font-family:"Noto Sans TC",sans-serif;font-size:.78rem;letter-spacing:.06em;color:var(--muted);line-height:1.9;margin:1.1rem 0 0;padding:0;text-align:left}
+.ehead .meta a{color:var(--gold)}
+.ehead .meta b{font-weight:400;color:var(--paper-dim)}
+.enote{font-family:"Noto Sans TC",sans-serif;font-size:.76rem;line-height:1.85;color:var(--muted);margin:1rem 0 0;padding:.7rem .9rem;border-left:2px solid var(--gold-dim);text-align:left}
+article{padding:2.4rem 0 1rem}
+article p{text-indent:0}
+article h2{font-size:1.08rem;font-weight:600;letter-spacing:.06em;margin:2.2rem 0 .9rem;line-height:1.6}
+article h2:first-child{margin-top:0}
+article .byline{font-family:"Noto Sans TC",sans-serif;font-size:.8rem;letter-spacing:.06em;color:var(--muted);text-align:left}
+article .fn{font-size:.9rem;line-height:1.85;color:var(--paper-dim);text-align:left;margin-bottom:.7em}
+article .info{font-family:"Noto Sans TC",sans-serif;font-size:.8rem;line-height:1.9;color:var(--paper-dim);text-align:left}
+article .sig{text-align:right;color:var(--paper-dim);font-size:.95rem}
+article sup{font-family:"EB Garamond",serif;font-size:.7em;color:var(--gold);line-height:0;margin-left:.1em}
+article[lang="ja"]{font-family:"Noto Serif TC","Hiragino Mincho ProN","Yu Mincho",serif}
+.pager{border-top:1px solid var(--rule)}
+.pager a{display:block;color:var(--paper);max-width:46%}
+.pager a small{display:block;color:var(--muted);letter-spacing:.14em;margin-bottom:.2rem}
+.pager a.next{text-align:right}
+</style>
+</head>
+<body data-desktop="wide">
+<div class="wrap">
+<div class="nav">
+    <a class="home" href="../../"><i></i>劉亮延</a>
+    <a href="../../essays/">評論散文</a>
+  </div>
+
+  <header class="ehead">
+    <p class="eyebrow">評論散文　04　散文．專欄</p>
+    <h1>Anna Maria 的古董舊貨店</h1>
+    <p class="meta"><b>MISC 經驗式時尚季刊 3，台北</b>　2003</p>
+    
+  </header>
+
+  <article lang="zh-Hant">
+    <h2>（刊頭語）</h2>
+    <p>阿婆七十五歲，個性爽朗，住在一條很窄的喬瓦索路，米蘭聚集最多古董店、小藝廊、品牌show room的布雷拉區，她經歷過墨索里尼時期。她的朋友傑里柯（Giorgio de Chirico）是義大利著名的超現實主義畫家，與荷蘭的瑪格麗特，西班牙的達利同一時期，但又更偏重在呈現形上思考。三十年前，她辯去生命中唯一一份正常工作，一個商業秘書，因為一些就連她此時回憶起都非常神秘的磁場召喚，在這裡，米蘭市布雷拉區中一條非常不起眼的小街，喬瓦索路，她開始賣舊貨。她一頭紅髮，每每奇裝異服，世界各地通曉門路的造型師，攝影師，模特兒都來她店裡借寶，彷彿一個秘密品牌基地。</p>
+    <h2>（正文）</h2>
+    <p>阿婆小時候住在一棟鋪張的十七世紀的大房子裡，雖然這只是她任公職的父親被義大利政府分配到的宿舍，又因為家裡有許多傭人，她的父母親沒有太多時間去瞭解這棟大房子的細節。有一個隱藏在某座大櫃子後面的通道，通往瑪麗亞阿婆第一個秘密基地，雖然是一個類似地竅的地方，但是她說，那個暗黑大房間頂上與牆上都畫滿壁畫、誇張的弧形栲等。雖然沒有足夠光線，陰陰暗暗中，她一天裡有很長時間在這個秘密基地，她在此演說與歌唱，很大聲那種。</p>
+    <p>於是，這就是她第一次的古董經驗，在義大利，我們應該說在長久以來富裕的北義大利，有許多家世中上的小孩子多多少少都有這樣的經驗--發現一個古老的秘密基地。但這個小女孩稍微不一樣，她尤其喜歡演說，而她的聽眾就是壁畫與弧形栲。</p>
+    <p>瑪麗亞阿婆的這一輩子就是這一家店，我們把它當作第一種說法。</p>
+    <p>阿婆瑪麗亞蒐集舊貨三十載，第二種說法。</p>
+    <p>她一生中從未離開這條街與其隔壁的另一條，第三種。</p>
+    <p>這個私人同時十分限制性的空間戀物癖延續50年前後沒有動搖，第四種。</p>
+    <p>瑪麗亞阿婆是一個超現實主義的實踐者，作為第五種。</p>
+    <p>但，當我們快速翻閱眾多奇詭或者冷感的模特兒般滑溜同時輕巧的姿勢與眼神，在很多一碰就會警鈴大作的潔淨空曠的時尚的氛圍中，而感到一點點疲乏與過份僵化時，我個人尤其願意提出如下見解：安娜瑪麗亞，一個古老的、斑駁的、鬼魅般次要，但不曾消失且繁複如花的、過去式般、一種全新態度的風尚，假設它作為第六種說明的角度。其首席設計師與品牌同名，一個穿著古怪、誠懇熱情且充滿理想的阿婆。她四十年前畢業於布雷拉藝術學院（ACCADEMIA DI BRERA)，主攻拼貼畫，三十多年來在自家樓下經營一家同名商店（或稱做展覽館），這裡一天不會超過3個顧客。她有時蒐集帽子，過陣子走遍歐洲找老眼鏡，整間店橫七豎八堆積著三十年來她所有的興趣的總和：披肩、大衣、禮服、盒子、玩偶、首飾、內衣、假花、鞋子等。她沒有清楚的分類列表，以至於她說有很多東西她知道有，但不知道放在哪裡。而最有趣的在於，這間店同時也是她自己的衣帽間，在米蘭藝文圈尤其以奇裝異服聞名的她用舊布自己縫製自己的禮服，自己修理鞋子，同時請注意她臉上那副有一百多年歷史，像橡皮筋可以彎曲的純金眼鏡。</p>
+    <p>每天，她坐在對街門口縫衣服或鞋子，或者跟某些客人坐在板凳上抽煙聊天一講四個鐘頭過去。有許多商人前來跟她提出擴大店面或增資的計畫，因為整個歐洲沒有第二家古董店蒐集如此完整的服裝與配件，最古老的從十八世紀，一直到30年代。</p>
+    <p>但是她通通拒絕掉了，她比較像個蒐集或者修補者，而不是商人，也正因為如此，這間年老的店鋪更像是博物館而不是商店。於是換句話說這是一個博物館與古董店的交界地帶。</p>
+    <p>介於利益與無利益之間，這句話裡面的意涵也可以說明設計師與藝術家的模糊交界，而在此我們不難發現一個有趣的關鍵：</p>
+    <p>愛戀古董的瑪麗亞阿婆告訴我，她尤其對於大部分的日本造型師來她店裡買下許多東西，然後拿回日本不是仿造大量生產，就是拆解原件變形古董等這類行為大感不恥，她基本上認為尊重古董應是第一原則。也就是說，她排斥任何對於傳統的挖用與偽作，尤其又是一種商業前提的行為。說到此，我環顧她的店鋪，然後盯著一系列她自己縫製的衣服鞋子帽子，我不禁更強烈的感受到，某股暗藏在瑪麗亞阿婆意識中：「成為一個特定符號」的強烈企圖。</p>
+    <p>當一個個人對於他自身的技術與思想能力有高度自覺時（或者他仍在邁向此一目標），他必流露出排斥與堅持的修辭，透過陳述--一個虛構中的完成，他試著讓某些他自身的理想性狀態反覆上演，而又因為虛構的實質與現實有所排斥，我們會聽到的多半是相對性的表達；這個意思是，首先她讓我知道，對於這個商業性世界她是明白的，同時她也有所應對。但是在那個商業性世界中，她已經太過於熟悉（因為她的經歷）而無法回到天真與無知的熱情莽撞中。當她不願意與出資者或者非常大方的古董蒐集家合作時，她個人的美學原則出現了，我們會感覺到在她整屋子的每一個獨立物件中，她所投射的個人喜好，那雖然以大量同時欠缺系統化的雜亂狀態向我呈現，但是每一個物件都是她的挑選以及她的修補。我不難想像，她在經歷修補每一個物件的過程中所投射出的完美狀態。也就是說，在任何一個不為老闆工作的裁縫的心智裡，都有一件最美的裝束。日子一久，季節反覆，她自己創造了自己的時尚，如何表現美，如何隱藏醜。</p>
+  </article>
+
+  <nav class="pager">
+    <span></span>
+    <span></span>
+  </nav>
+
+<footer class="seal">
+  <img class="stamp" src="../../images/company/%E5%8A%89%E4%BA%AE%E5%BB%B6_%E7%AB%A0.png" alt="劉亮延">
+  lyliu.art　劇照著作權屬各攝影者所有
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>劉亮延 關於</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@300;400;600;700&display=swap">
+<style>
+/* 字型與排法沿用《湘蘭圖 2026》節目冊；配色為甲 宣紙 */
+:root{
+  --measure:34rem;
+  --fs:1.0625rem;
+  --cinnabar:#A8453A;
+  --ink:#F3EFE6;
+  --ink-2:#EAE5DA;
+  --ink-3:#E3DDD0;
+  --paper:#1F1B17;
+  --paper-dim:#4C4740;
+  --muted:#7A746B;
+  --gold:#8C6D3F;
+  --gold-dim:#B39868;
+  --rule:rgba(31,27,23,.14);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--ink);color:var(--paper);
+  font-family:"Noto Serif TC","EB Garamond","Songti TC",serif;
+  font-size:var(--fs);line-height:1.95;
+  font-feature-settings:"palt" 1;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--gold);text-underline-offset:.25em;text-decoration-thickness:.5px}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--cinnabar);outline-offset:3px;border-radius:2px}
+
+.wrap{max-width:var(--measure);margin:0 auto;padding:0 1.35rem}
+
+/* 導覽 */
+.nav{display:flex;justify-content:space-between;align-items:baseline;
+  padding:1.2rem 0 .9rem;border-bottom:1px solid var(--rule);
+  font-family:"Noto Sans TC",sans-serif;font-size:.74rem;letter-spacing:.16em;color:var(--muted)}
+.nav .home{color:var(--paper)}
+.nav .home i{display:inline-block;width:.55em;height:.55em;background:var(--cinnabar);margin-right:.6em;vertical-align:.05em}
+.nav a{color:var(--muted);text-decoration:none}
+
+/* 頁題 */
+.head{padding:2.6rem 0 0}
+h1{font-size:1.75rem;font-weight:600;line-height:1.4;margin:0;letter-spacing:.06em}
+h1 .en{display:block;font-family:"EB Garamond",serif;font-style:italic;
+  font-size:1.05rem;font-weight:400;color:var(--gold);letter-spacing:.02em;margin-top:.35rem}
+
+/* 自傳 */
+.bio{padding:2.2rem 0 2.6rem;border-bottom:1px solid var(--rule)}
+p{margin:0 0 1.05em;text-align:justify;overflow-wrap:break-word;line-break:strict}
+p:last-child{margin-bottom:0}
+.bio p{font-size:1.12rem;line-height:1.9}
+p i,p em{font-family:"EB Garamond",serif;font-style:italic;font-size:1.04em}
+.field{font-family:"Noto Sans TC",sans-serif;font-size:.78rem;letter-spacing:.08em;
+  color:var(--muted);line-height:1.9;text-align:left;margin-bottom:1.4em}
+
+/* 五個可摺疊小節 */
+details{border-bottom:1px solid var(--rule)}
+summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:2.6rem 1fr auto;
+  align-items:baseline;gap:.4rem;padding:1.35rem 0}
+summary::-webkit-details-marker{display:none}
+summary .no{font-family:"EB Garamond",serif;font-size:.95rem;letter-spacing:.06em;color:var(--gold);
+  font-variant-numeric:tabular-nums}
+summary h2{margin:0;font-size:1.2rem;font-weight:600;letter-spacing:.06em;line-height:1.5}
+summary .mark{font-family:"Noto Sans TC",sans-serif;font-size:.72rem;letter-spacing:.14em;color:var(--muted)}
+summary .mark::before{content:"展開"}
+details[open] summary .mark::before{content:"收合"}
+summary:hover h2{color:var(--gold)}
+.body{padding:0 0 2.4rem}
+figure{margin:0 0 1.6rem}
+figure img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:1px;background:var(--ink-2);color:transparent}
+figcaption{font-family:"Noto Sans TC",sans-serif;font-size:.74rem;line-height:1.75;
+  color:var(--muted);margin-top:.7rem;text-align:center}
+.aside{color:var(--paper-dim);font-size:.97rem}
+.note{font-family:"Noto Sans TC",sans-serif;font-size:.76rem;color:var(--muted);text-align:left;letter-spacing:.04em}
+
+/* 頁尾 */
+footer{padding:3rem 0 4rem;text-align:center;color:var(--muted);
+  font-family:"Noto Sans TC",sans-serif;font-size:.78rem;line-height:2}
+footer .cjk{font-family:"Noto Serif TC",serif;font-size:1.5rem;letter-spacing:.5em;
+  text-indent:.5em;color:var(--paper);margin-bottom:.5rem}
+footer .lat{font-family:"EB Garamond",serif;font-style:italic;font-size:1.05rem;
+  color:var(--gold);margin-bottom:1.6rem}
+
+@media (min-width:46rem){
+  :root{--fs:1.09rem}
+  .wrap{padding:0 2rem}
+}
+footer.seal .stamp{width:5.2rem;height:auto;margin:0 auto 1.8rem;display:block}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <div class="nav">
+    <span class="home"><i></i>劉亮延</span>
+    <a href="../">返回首頁</a>
+  </div>
+
+  <header class="head">
+    <h1>關於<span class="en">About</span></h1>
+  </header>
+
+  <section class="bio">
+    <p>劉亮延，1991年畢業於國立臺東師院附設實驗小學六年五班。2006年創立李清照私人劇團感傷動作派。2015年取得國立交通大學社會與文化研究所文學博士。2024年起任教於國立臺東大學兒童文學研究所。著有劇作集《婦女生活十一種》（2021），詩集《牡丹刑》（2008）《有鬼》（2002）《你那菊花的年代》（1999）。編導劇目二十餘齣，策劃執行演出逾四百場，並製作四張專輯：《曹七巧》劇場原創音樂原聲帶（2008）、《馬伯司氏：劉欣然爵士京劇同名專輯》（2017）、《湘蘭圖：爵士臺灣戲曲現場收音專輯》（2024）、《歌仔曹七巧：台灣爵士戲曲專輯》（2025）。</p>
+    <p>童話的啟蒙是《三隻小豬》。大野狼一吹氣，房子就全倒，這個畫面他一直記得，以致颱風至今在他眼裡都還是童話。他對草屋與木屋的屋主始終同情不捨，也覺得故事加在他們身上的道德評價莫名其妙，反叛之心從這裡開始。後來經歷地震，他知道磚房一樣會倒，反而替大野狼委屈，也為《三隻小豬》嫌貧愛富、幸災樂禍的階級觀念感到難過。兒時的閱讀啟蒙是英文漢聲出版社1982年出版的十二冊《中國童話》，古裝、妖怪、苦命青衣與大俠刺客，很早就成為他的平行宇宙，也讓他與現代社會長期格格不入。30歲以來投身戲曲創作，他才確認這是童年閱讀史留下的創傷。</p>
+  </section>
+
+  <details id="research">
+    <summary><span class="no">一</span><h2>研究興趣</h2><span class="mark"></span></summary>
+    <div class="body">
+      <figure>
+        <img loading="lazy" src="../images/about/關於頁_研究.jpg" alt="劉亮延肖像，黑白，手托下顎">
+        <figcaption>攝影者不詳</figcaption>
+      </figure>
+      <p class="field">研究領域：視覺文化研究、表演藝術研究、跨文化戲劇（曲）製作、創意寫作、劇場導演。</p>
+      <p>研究與創作對我而言是同一件事。知識系統使我處理題材時有方向，批判方法決定我的觀點，寫作與劇場排練則是感覺的積極行動。</p>
+      <p>「創作不能教」已經成為共識，藝術市場的邏輯無疑接受它：作品的價值來自卓越與成功，而卓越與成功無法培養，只能等待它罕見偶然出現。這個共識比表面上更難拆解，因為它同時包含兩個主張，而這兩個主張形成的世界觀相隔將近一百年。</p>
+      <p>第一層是天賦論。艾略特在〈Tradition and the Individual Talent〉（1919）中主張，傳統無法被繼承，想要它就必須付出巨大的勞動去取得；所謂個人才能，是在既有作品構成的秩序中被辨認出來的位置，不是先於秩序存在的稟賦。創作的能力自然可以被描述、被傳授、被檢驗。</p>
+      <p>第二層是競爭論，也就是把成功的作品看成優勝劣敗的結果。我以松茸作為反例。Anna Tsing 在 <i>The Mushroom at the End of the World: On the Possibility of Life in Capitalist Ruins</i>（2015）中指出，松茸並非生長於原始林，而是生長於被砍伐、被廢棄的人為擾動地。它無法被人工栽培，卻依賴人類活動所造成的破壞；它是規劃失敗之後的產物，不是規劃成功的結果。Tsing 據此提出 salvage accumulation，說明資本如何從自身無法控制的過程中撿拾價值：松茸被高價交易，卻始終不能被工業化生產。</p>
+      <p>我從這兩個立場中看見自己的工作。藝術不是資本加工的產品，卻同樣在市場中被分級與交易；它的生成場所是消耗、淘汰與失敗所留下的次生地。被丟棄的排練、寫壞的稿子、演過一次就不再演的作品，不是通往成功的過渡，它們就是那片林地本身。作品是剩餘，不是勝利。紀念因此是我持續工作的動力。</p>
+      <p>2016年取得國立交通大學社會與文化研究所文學博士，2017年起進入大學任教。我的研究方向被教學持續改變。任教單位依序是東華大學藝術創意產業學系、中正大學台灣文學與創意應用研究所、東海大學表演藝術與創作碩士學位學程、臺東大學兒童文學研究所，跨越四個不同學科，挑戰我每一次都要把同一個問題換一種語言文化重講一次；講不通的地方，就是我的文化認識還不夠的地方。研究對象因此一再調整。在工藝產品學系的時期，我處理複製與譜記的問題，寫成〈抄襲即原創：《關於大野一雄》與舞譜〉，刊於《藝術評論》第43期（2022），頁31–84（THCI），以川口隆夫2013年的單人作品為對象，經由土方巽對歌舞伎的翻譯與理解說明戰後前衛藝術運動的承襲關係，並分析女形表演與影像之間的譜記關係。在台灣文學研究所的時期，問題轉向大眾劇場史的重新評估，2022年5月20日於國立清華大學發表〈解嚴前大眾劇場史再探：重讀李喬《藍彩霞的春天》〉，修訂後收入《千面李喬》論文集（臺北：萬卷樓，2023），頁399–436；相關的還有2021年5月14日在中國文化大學發表的〈脫籍從良與文人暴力：一個戲曲的思想史問題〉。</p>
+      <p>進入兒童文學研究所之後，分析對象從劇場移到了展覽現場。2025年3月，臺北市立美術館兒童藝術教育中心展出邱承宏（1983年生）的《水泥動物園》：一批1980年代設置於花蓮美崙山公園的水泥動物塑像，在公園整建時出土，修復時未重新上漆，鋼筋裸露的狀態被保留，二十四座重新安置於基座，以V字隊形陳列。我先從訪談下手，〈《水泥動物園》的劇場性：大陳村訪邱承宏〉刊於《竹蜻蜓：兒少文學與文化》（2025年12月）；同年10月24至25日於國立臺東大學發表〈非語言的暴力：〈水泥動物園〉的觀演關係〉。在此基礎上寫成期刊論文〈《水泥動物園》的劇場性：擬動物性與觀看他者的倫理空間〉刊於《雕塑研究》第35期。該文以 Emma Willis 在 <i>Theatricality, Dark Tourism and Ethical Spectatorship: Absent Others</i>（Palgrave Macmillan, 2014）區分的政治性與本體論式兩種觀演範式為起點，另一條線索是 Artaud 在1931年巴黎殖民博覽會觀看峇里島舞蹈後提出的擬動物性，主張兩者都不足以說明觀眾在《水泥動物園》前的處境，因而提出「第三種劇場性」，判準是肉身倫理而非再現或象徵，並設定三組觀者座標：感知模式（語言的／感官的）、觀看位置（主權凝視／被牽動）、姑且信之的時間（已逝的過去／生成中的當下）。最近一篇〈「美少年作為別人的問題」：《歌仔寶玉》劇本創作的返身性研究〉則是一篇創作研究論述，比較分析一個戲曲文本的主題、典故與方法。</p>
+    </div>
+  </details>
+
+  <details id="teaching">
+    <summary><span class="no">二</span><h2>教學設計</h2><span class="mark"></span></summary>
+    <div class="body">
+      <figure>
+        <img loading="lazy" src="../images/about/關於頁_授課_陳健攝.jpg" alt="劉亮延在舞台上持麥克風說話，背景芭蕉屏風">
+        <figcaption>攝影 陳健</figcaption>
+      </figure>
+      <p>我的課程設計圍繞著創作，以及創作的研究。這幾年我在此軸線上改換過三種方法。</p>
+      <p>第一種，材料來自我自己的題目。2017年秋季在東華大學開設的「藝術概論」，教學計畫載明以我十五年間十餘部劇場作品及其文學原著為教材；同一時期的「藝術創意潛能開發」（2017年秋、2018年秋）分為寡婦、妖精、慰安婦、女知青、女作家、女教師六個單元，這六個形象正是我自己的劇作處理過的對象，學生透過身體工作坊從它們取得模仿參考的材料。這個階段學生看得到一個創作者實際怎麼工作，取得的是一套可以拆解的方法。</p>
+      <p>第二種，改為引導學生制定自己的題目。2022年秋季在東海大學開設的「跨域創作」，課程主軸訂為「自己的研究」，學生從兒時場景，開始挑選主題；隔年秋季的「跨域創作（一）」處理的是題目與形式之間的距離，以「除魅」為題發展單人表演，思考阿岡本的「裸命」的具體經驗。</p>
+      <p>第三種，2024年到臺東大學之後，不預設媒材，也不預設身體。「兒童戲劇創作」以「動物、道具、廢話」三個單元組成，三個單位都不以戲劇情節為目的，學生只能從材料本身開始。同一時期我把影像納入創作課程：從大一新生的台東初體驗開始探索。該課程設計於2026年4月11日獲教育部素養導向高教學習創新計畫「大學第一年經驗研究獎」（First-Year Experience 50 Award），與滿田彌生老師共同獲獎。</p>
+      <p class="note">歷年開課紀錄置於<a href="../cv/">履歷 CV</a>頁。</p>
+    </div>
+  </details>
+
+  <details id="supervision">
+    <summary><span class="no">三</span><h2>研究生指導</h2><span class="mark"></span></summary>
+    <div class="body">
+      <figure>
+        <img loading="lazy" src="../images/about/關於頁_指導_陳健攝.jpg" alt="工作室中，劉亮延彎腰指著螢幕，另一人坐著">
+        <figcaption>攝影 陳健</figcaption>
+      </figure>
+      <p>至2026年8月為止，我所指導的碩士論文有一篇：周宜賢，《寶可夢：決戰2037》劇本創作研究，東海大學表演藝術與創作碩士學位學程碩士論文，2023年（111學年度第2學期）。該論文由劇本創作與創作研究兩部分構成。劇本寫一位編劇因作品《寶可夢的夢》被控抄襲，為證明清白而進入寶可夢世界，最終在法庭上敗訴；創作研究部分處理創作動機與文獻探討，文獻範圍包括國內設計學界的漫畫研究、傳播學界的漫畫敘事研究，以及日本當代表演藝術中以抄襲為核心問題的討論。最後一項與我2022年發表於《藝術評論》第43期的〈抄襲即原創：《關於大野一雄》與舞譜〉屬同一問題領域，指導過程中的討論即由此展開。</p>
+      <p>指導經驗之外，2021年至2026年間我擔任碩士論文口試委員十七次，校內為國立臺東大學兒童文學研究所，校外包括國立東華大學藝術創意產業學系（含碩士在職專班與民族藝術組）、國立中正大學台灣文學與創意應用研究所，以及東海大學表演藝術與創作碩士學位學程。這些論文多屬創作自述與創作研究類型，題材涵蓋錄像、繪畫、複合媒材、織品、舞蹈、劇本與兒少文學研究。</p>
+      <p>作為一個劇場導演，我習慣把每個合作者當成台上的演員，這也決定了我怎麼帶學生。導演的工作不是下指令，而是看見：看出一個人什麼時候卡住、什麼時候在硬撐。所以我帶你，在意的是你的狀態，不是你的進度。我懷疑權威，尊重自由，不會用壓力或熬夜來帶人。我重視紀律，因為一個人能不能長期保持工作的狀態與熱情很重要，而紀律是維持它的方法，不是要你服從誰。所以我不會在晚上十點以後、早上十點以前聯絡你，你的生活與睡眠同樣重要。</p>
+      <p>創作上，我鼓勵你自己解決自己的問題，我會做你的第一個讀者與觀眾；研究上，我要求嚴謹，希望你養成整理檔案、傾聽與細讀的習慣。如果你還在找方向、題目還沒有，也沒關係，我會建議你先放下有用無用，有興趣沒性興趣的計較，從感覺開始談，找回一點感覺的能力。</p>
+      <p>先讓你有心理準備：我不愛閒聊，談事不笑、看起來嚴肅，那只是我專注的樣子，不是冷淡，你不必為我的表情多做揣想。如果你帶著真正想做、真正在意的東西來找我，你會得到我完整的注意力。我們不必寒暄，你直接說你想做什麼、途經何處，我們可以席地開工。</p>
+      <p class="aside">（說個題外話：我是雙子座、上升射手。如果你也讀星盤，大概能猜到我這人矛盾的地方：好奇又疏離，理想又愛潑自己冷水。信不信由你，就當作認識我的一條線索。）</p>
+    </div>
+  </details>
+
+  <details id="theatre">
+    <summary><span class="no">四</span><h2>劇場創作</h2><span class="mark"></span></summary>
+    <div class="body">
+      <figure>
+        <img loading="lazy" src="../images/about/關於頁_劇場演出_陳健攝.jpg" alt="劉亮延在舞台上與上妝演員並坐">
+        <figcaption>攝影 陳健</figcaption>
+      </figure>
+      <p>我寫的戲多半從被歷史遺忘的女人展開：曹七巧、馬伯司氏、白素貞、妙玉、寶玉、馬湘蘭。她們在原典裡是結果，而我往往反推其過程。形式上我讓歌仔戲與京劇的演員唱他們本來的腔，但拆掉原本包住那些腔的敘事結構，讓一個角色同時是自己、是說自己的人、也是被別人說的人。這個做法自《曹七巧》（2005年首演，2006年獲台新藝術獎季提名並入決選）之後，陸續用在《白素貞》（2007年，台新藝術獎季提名）、《劉三妹》（2008年，客家電視台，獲電視金鐘獎最佳美術設計獎）、《石秀》（2015年，台新藝術獎季提名）、《燕青》（2016年，台新藝術獎季提名）、《馬伯司氏》（2016年首演，2018年台新藝術獎季提名）、《許仙》（2018年）、《妙玉》（2020年）、《湘蘭圖》（2022年）、《寶玉》（2022年）與《贋作鍾馗》（2024年）。</p>
+      <p>工作上最實際的困難來自兩種價值觀。戲曲演員與現代戲劇工作者對「什麼叫把戲做好」的判準不同：前者以行當、程式與師承為準，後者以概念、結構與詮釋為準。要在一次製作裡讓雙方取得共識非常困難，長期下來多數製作只能偏向其中一方。體制上的困難是分類：我的作品在戲曲類別裡被視為不夠傳統，在現代戲劇類別裡被視為不夠現代，補助、獎項與評論的既有欄位都不完全適用。</p>
+      <p>另一個困難在導演這個位置本身。這一行對導演該是什麼典型仍有爭議，而爭議的形式往往是等待：等一個能夠一次決定所有事、承擔所有責任、讓所有人安心的人出現。我稱這種狀態為父親焦慮。我不認為那樣的人存在，也不打算扮演。從排練場到劇場，我十分堅持一對一的關係。</p>
+      <p>劇場創作上尚未解決的問題有兩個，都不是技術問題。其一，藝人究竟是一種職業還是一種身份。其二，創作演出究竟是掙錢的工作，還是自我覺察的方式。這兩個問題我在研究裡處理，在排練場裡則每一次重新遇到。做這件事的快樂與此無關：快樂來自觀眾在場時的反應，來自作為戲迷的自己的自我感動。</p>
+    </div>
+  </details>
+
+  <details id="international">
+    <summary><span class="no">五</span><h2>國際交流</h2><span class="mark"></span></summary>
+    <div class="body">
+      <figure>
+        <img loading="lazy" src="../images/about/關於頁_國際交流_日本排練場_劉亮延攝.jpg" alt="東京森下排練場，劉亮延戴耳機側身回看">
+        <figcaption>東京森下排練場　攝影 劉亮延</figcaption>
+      </figure>
+      <p>國際演出自2007年開始，最初三檔集中在同一年：《曹七巧》先後進入北京的國際當代戲劇演出季與上海話劇藝術中心的亞洲當代戲劇節，《白素貞》則獲邀北京華人城市青年戲劇季。2009年《阿姨和他的空少們》再度受邀北京華人城市青年戲劇季。2010年《曹七巧：寡婦見世物》於東京亞洲表演藝術節演出。2011年是密度最高的一年，《初飛花瑪莉訓子》進入北京青年戲劇節，《曹七巧》同時獲邀首屆成都國際戲劇節與首屆成都雙年展。此後在中國的演出持續：2012年《曹七巧》於雲南麗江 COART 藝術現場環境藝術節，2013年《夏綠地》於上海亞洲當代戲劇節，2014年《曹七巧》先後於成都藝術劇院冬季展演與浙江烏鎮戲劇節，2016年《大理國的駝男》於雲南大理 COART、《馬伯司氏》於北京第三屆當代小劇場戲曲藝術節，2018年《曹七巧》再度進入北京當代小劇場戲曲藝術節、《許仙》於上海長江劇場（原卡爾登大戲院）演出，2019年《馬伯司氏》與《曹七巧》同時獲邀上海東方藝術中心第十一屆東方名家名劇月。</p>
+      <p>除受邀演出之外，另有兩項自行發起的跨國計畫。2012年至2014年的「少年、片腕、水晶幻想：川端康成三部作」由日本西武基金會（the Saison Foundation）三年期國際共製計畫資助，我與日本編導 Seiji Nozoe、舞踏家 Mirei Yamagata 各自改編一部川端康成小說，交換使用日本與台灣的演員，於東京森下排練場、台北與上海排練演出，累計二十四場，其中2014年分別於東京こまばアゴラ劇場與上海亞洲當代戲劇節發表。同一時期的「曹七巧走唱」（2011年至2012年）則把演出帶進非劇場空間，地點包括蘇州滄浪亭、雲南束河百年古宅、烏鎮城河、三峽老街、烏來與淡水。2012年另與上海話劇藝術中心聯合製作音樂劇《白蘭芝》，首輪三十二場，排練期五個月。</p>
+      <p>研究與交流的往來更早。2005年獲雲門舞集文教基金會首屆流浪者計畫，以東京為據點；2008年獲邀倫敦南堤國際詩節（Poetry International, Southbank Centre）；2016年與2025年兩度擔任亞洲文化協會台灣獎助計畫評審，2025年11月4日《湘蘭圖》受邀該會「璞玉煉金的故事」ACC台灣30系列，於臺北表演藝術中心球劇場演出。赴北京學習京劇唱段並訪談荀派名家孫毓敏、在東京淺草結識歌舞伎女形宗山流胡蝶，都不是計畫的一部分，卻決定了後來十年的工作方向。</p>
+    </div>
+  </details>
+
+  <footer class="seal">
+    <img class="stamp" src="../images/company/%E5%8A%89%E4%BA%AE%E5%BB%B6_%E7%AB%A0.png" alt="劉亮延">
+    lyliu.art　照片著作權屬各攝影者所有
+  </footer>
+
+</div>
+
+</body>
+</html>
