@@ -100,6 +100,7 @@ footer.seal .stamp{width:5.2rem;height:auto;margin:0 auto 1.8rem;display:block}
 
 
 
+
 .langbar{display:flex;gap:.4rem;justify-content:flex-end;margin:0 0 1.2rem}
 .langbar.top{margin:1.6rem 0 .4rem}
 .langbar button{font-family:"Noto Sans TC",sans-serif;font-size:.72rem;letter-spacing:.12em;background:none;border:1px solid var(--rule);color:var(--muted);padding:.3rem .68rem;border-radius:2px;cursor:pointer;line-height:1.5}
@@ -110,8 +111,8 @@ footer.seal .stamp{width:5.2rem;height:auto;margin:0 auto 1.8rem;display:block}
 summary h2 .h2en{display:none;font-family:"EB Garamond",serif;font-style:italic;font-weight:400;letter-spacing:.02em}
 html[data-lang="en"] summary h2 .h2zh{display:none}
 html[data-lang="en"] summary h2 .h2en{display:inline}
-html[data-lang="en"] summary .no{display:none}
-html[data-lang="en"] summary{grid-template-columns:1fr auto}
+summary .no{display:none}
+summary{grid-template-columns:1fr auto}
 html[data-lang="en"] summary .mark::before{content:"Expand"}
 html[data-lang="en"] details[open] summary .mark::before{content:"Collapse"}
 @media print{.langbar{display:none}.en-body{display:block!important}}
