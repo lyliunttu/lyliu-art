@@ -58,14 +58,30 @@ footer.seal .stamp{width:5.2rem;height:auto;margin:0 auto 1.8rem;display:block}
 
 .head{padding:2.6rem 0 0}
 .head p{font-family:"Noto Sans TC",sans-serif;font-size:.78rem;letter-spacing:.08em;color:var(--muted);margin:1.1rem 0 0;line-height:1.9;text-align:left}
-.vid{margin:0 0 2.2rem}
-.vid .frame{position:relative;aspect-ratio:16/9;background:var(--ink-3);border-radius:1px;overflow:hidden}
-.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.vid figcaption{text-align:left;margin-top:.6rem}
-.vid figcaption b{display:block;font-family:"Noto Serif TC",serif;font-size:1.02rem;color:var(--paper);font-weight:600}
-.vid figcaption i{font-family:"EB Garamond",serif;color:var(--gold)}
-.cta{display:inline-block;margin-top:.4rem;font-family:"Noto Sans TC",sans-serif;font-size:.78rem;letter-spacing:.14em;color:var(--cinnabar);border:1px solid rgba(168,69,58,.4);padding:.5rem .9rem;border-radius:2px;text-decoration:none}
-@media (min-width:58rem){body[data-desktop="wide"] .videos{width:var(--wide);max-width:calc(100vw - 4rem);position:relative;left:50%;transform:translateX(-50%)}}
+.showcase{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem .9rem;margin:1.8rem 0 0}
+.card{display:block;text-decoration:none;color:inherit;cursor:pointer}
+.card .th{position:relative;display:block;aspect-ratio:16/9;overflow:hidden;background:var(--ink-3);border-radius:2px;box-shadow:0 1px 0 rgba(31,27,23,.06),0 8px 22px -14px rgba(31,27,23,.45)}
+.card .th img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.card:hover .th img{transform:scale(1.04)}
+.card .th::after{content:"";position:absolute;left:50%;top:50%;width:2.6rem;height:2.6rem;margin:-1.3rem 0 0 -1.3rem;border-radius:50%;background:rgba(31,27,23,.62) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23F3EFE6" d="M9 6.5v11l9-5.5z"/></svg>') center/1.3rem no-repeat;opacity:.85;transition:opacity .3s}
+.card:hover .th::after{opacity:1}
+.card b{display:-webkit-box;margin:.55rem 0 0;font-family:"Noto Serif TC",serif;font-weight:500;font-size:.9rem;line-height:1.55;color:var(--paper);text-align:left;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card small{display:block;margin-top:.2rem;font-family:"EB Garamond",serif;font-style:italic;font-size:.86rem;color:var(--gold);text-align:left;letter-spacing:.02em}
+.card small .src{font-family:"Noto Sans TC",sans-serif;font-style:normal;font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-left:.5rem}
+.card.lead{grid-column:1/-1}
+.card.lead b{font-size:1.08rem;font-weight:600;-webkit-line-clamp:3}
+.card.lead .th::after{width:3.4rem;height:3.4rem;margin:-1.7rem 0 0 -1.7rem;background-size:1.7rem}
+.cta{display:inline-block;margin-top:2.2rem;font-family:"Noto Sans TC",sans-serif;font-size:.78rem;letter-spacing:.14em;color:var(--cinnabar);border:1px solid rgba(168,69,58,.4);padding:.5rem .9rem;border-radius:2px;text-decoration:none}
+.lb{position:fixed;inset:0;background:rgba(31,27,23,.92);z-index:50;display:flex;align-items:center;justify-content:center;padding:1rem}
+.lb[hidden]{display:none}
+.lb .box{width:min(100%,62rem);aspect-ratio:16/9;background:#000;box-shadow:0 30px 80px -20px rgba(0,0,0,.8)}
+.lb iframe{width:100%;height:100%;border:0;display:block}
+.lb .x{position:absolute;top:.6rem;right:.9rem;font-family:"EB Garamond",serif;font-style:italic;font-size:1rem;color:var(--ink);background:none;border:0;cursor:pointer;letter-spacing:.06em;padding:.4rem .6rem}
+@media (min-width:58rem){
+  body[data-desktop="wide"] .videos{width:var(--wide);max-width:calc(100vw - 4rem);position:relative;left:50%;transform:translateX(-50%)}
+  body[data-desktop="wide"] .showcase{grid-template-columns:repeat(3,1fr);gap:1.8rem 1.2rem}
+  body[data-desktop="wide"] .card.lead{grid-column:1/3}
+}
 
 footer.seal .wm{width:min(22rem,88%);height:auto;margin:0 auto 1.4rem;display:block}
 footer.seal .stamp{width:5.2rem;height:auto;margin:0 auto 1.8rem;display:block}
@@ -80,31 +96,405 @@ footer.seal .stamp{width:5.2rem;height:auto;margin:0 auto 1.8rem;display:block}
 
   <header class="head">
     <h1>影片<span class="en">Videos</span></h1>
-    <p>李清照私人劇團感傷動作派的演出片段。完整清單在 YouTube 頻道。</p>
+    <p>李清照私人劇團感傷動作派的演出與相關影片，依觀看次數排列（2026 年 9 月統計）。點擊即在本頁播放；完整清單在 YouTube 頻道。</p>
   </header>
 
   <section class="videos">
-    <figure class="vid">
-      <div class="frame"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/80iSbte7Uns" title="《湘蘭圖》「浪酒野神」" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-      <figcaption><b>《湘蘭圖》「浪酒野神」</b><i>Tipsy and Appetite</i>　2022　李清照私人劇團</figcaption>
-    </figure><figure class="vid">
-      <div class="frame"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/_HavsxlfLzE" title="《湘蘭圖》演出片段" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-      <figcaption><b>《湘蘭圖》演出片段</b><i>Lady Orchid</i>　2022　李清照私人劇團</figcaption>
-    </figure><figure class="vid">
-      <div class="frame"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/3EX6jwis3dk" title="《歌仔曹七巧》「五四三＋一朵紅花」" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-      <figcaption><b>《歌仔曹七巧》「五四三＋一朵紅花」</b><i>Tsô tshit khá</i>　2024　李清照私人劇團</figcaption>
-    </figure><figure class="vid">
-      <div class="frame"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/OJ0bya782HA" title="《馬伯司氏》演出片段" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-      <figcaption><b>《馬伯司氏》演出片段</b><i>Lady Macbeth</i>　2016　李清照私人劇團</figcaption>
-    </figure>
+    <div class="showcase">
+    <a class="card lead" href="https://www.youtube.com/watch?v=gXGHY2dQXkA" data-id="gXGHY2dQXkA" rel="noopener">
+      <span class="th"><img loading="eager" src="https://i.ytimg.com/vi/gXGHY2dQXkA/maxresdefault.jpg" alt="陳禹安爵士歌仔戲唱段，《許仙》「天仙下凡」" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/gXGHY2dQXkA/hqdefault.jpg'"></span>
+      <b>陳禹安爵士歌仔戲唱段，《許仙》「天仙下凡」</b>
+      <small>觀看 15,164 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=FUAOPE0rQUU" data-id="FUAOPE0rQUU" rel="noopener">
+      <span class="th"><img loading="eager" src="https://i.ytimg.com/vi/FUAOPE0rQUU/hqdefault.jpg" alt="陳禹安以歌仔戲《梅玉配》獲得2015傳藝金曲獎新秀表演獎" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/FUAOPE0rQUU/hqdefault.jpg'"></span>
+      <b>陳禹安以歌仔戲《梅玉配》獲得2015傳藝金曲獎新秀表演獎</b>
+      <small>觀看 10,737 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=GJLITd9yObY" data-id="GJLITd9yObY" rel="noopener">
+      <span class="th"><img loading="eager" src="https://i.ytimg.com/vi/GJLITd9yObY/hqdefault.jpg" alt="陳禹安爵士歌仔戲唱段，《許仙》「老法海」" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/GJLITd9yObY/hqdefault.jpg'"></span>
+      <b>陳禹安爵士歌仔戲唱段，《許仙》「老法海」</b>
+      <small>觀看 9,283 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=IXrYVuVpohc" data-id="IXrYVuVpohc" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/IXrYVuVpohc/hqdefault.jpg" alt="海峽衛視《梨園尋訪》之《刘欣然》" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/IXrYVuVpohc/hqdefault.jpg'"></span>
+      <b>海峽衛視《梨園尋訪》之《刘欣然》</b>
+      <small>觀看 6,825 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=Z7p6hd5EF5s" data-id="Z7p6hd5EF5s" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/Z7p6hd5EF5s/hqdefault.jpg" alt="2021許仙(Khoo Sian) PV" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/Z7p6hd5EF5s/hqdefault.jpg'"></span>
+      <b>2021許仙(Khoo Sian) PV</b>
+      <small>觀看 6,422 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=5-gOPDF7s-8" data-id="5-gOPDF7s-8" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/5-gOPDF7s-8/hqdefault.jpg" alt="陳禹安爵士歌仔戲唱段，《許仙》「小青慢舉」" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/5-gOPDF7s-8/hqdefault.jpg'"></span>
+      <b>陳禹安爵士歌仔戲唱段，《許仙》「小青慢舉」</b>
+      <small>觀看 5,649 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=4a7h3rG0xi0" data-id="4a7h3rG0xi0" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/4a7h3rG0xi0/hqdefault.jpg" alt="陳禹安爵士歌仔戲唱段，《許仙》「殺出了金山寺」" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/4a7h3rG0xi0/hqdefault.jpg'"></span>
+      <b>陳禹安爵士歌仔戲唱段，《許仙》「殺出了金山寺」</b>
+      <small>觀看 4,504 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=QBwttRdm5nU" data-id="QBwttRdm5nU" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/QBwttRdm5nU/hqdefault.jpg" alt="2015 石秀 陳禹安 HD" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/QBwttRdm5nU/hqdefault.jpg'"></span>
+      <b>2015 石秀 陳禹安 HD</b>
+      <small>觀看 4,114 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=yaKzeoC0B08" data-id="yaKzeoC0B08" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/yaKzeoC0B08/hqdefault.jpg" alt="寶玉唱段〈行酒令〉" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/yaKzeoC0B08/hqdefault.jpg'"></span>
+      <b>寶玉唱段〈行酒令〉</b>
+      <small>觀看 4,052 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=G5SanmaqFOw" data-id="G5SanmaqFOw" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/G5SanmaqFOw/hqdefault.jpg" alt="《戏曲长镜头》欣然起行  刘欣然 320x240" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/G5SanmaqFOw/hqdefault.jpg'"></span>
+      <b>《戏曲长镜头》欣然起行  刘欣然 320x240</b>
+      <small>觀看 2,921 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=OJ0bya782HA" data-id="OJ0bya782HA" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/OJ0bya782HA/hqdefault.jpg" alt="《馬伯司氏》全劇（公視表演廳）" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/OJ0bya782HA/hqdefault.jpg'"></span>
+      <b>《馬伯司氏》全劇（公視表演廳）</b>
+      <small>觀看 2,860 次<span class="src">公視+</span></small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=PkUPSE39cEs" data-id="PkUPSE39cEs" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/PkUPSE39cEs/hqdefault.jpg" alt="《湘蘭圖》「品畫辨龍蛇」 Bebop for Reading a Painting" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/PkUPSE39cEs/hqdefault.jpg'"></span>
+      <b>《湘蘭圖》「品畫辨龍蛇」 Bebop for Reading a Painting</b>
+      <small>觀看 2,843 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=W098Rjo1-QE" data-id="W098Rjo1-QE" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/W098Rjo1-QE/hqdefault.jpg" alt="法海之歌《溜溜》" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/W098Rjo1-QE/hqdefault.jpg'"></span>
+      <b>法海之歌《溜溜》</b>
+      <small>觀看 2,721 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=hgQXCRr0-q8" data-id="hgQXCRr0-q8" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/hgQXCRr0-q8/hqdefault.jpg" alt="劉欣然獨角戲《馬伯司氏》唱段「紫杉調」" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/hgQXCRr0-q8/hqdefault.jpg'"></span>
+      <b>劉欣然獨角戲《馬伯司氏》唱段「紫杉調」</b>
+      <small>觀看 2,589 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=8gB58VRw1Zs" data-id="8gB58VRw1Zs" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/8gB58VRw1Zs/hqdefault.jpg" alt="劉欣然獨角戲《馬伯司氏》唱段「喑啞的烏鴉叫嘎嘎」" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/8gB58VRw1Zs/hqdefault.jpg'"></span>
+      <b>劉欣然獨角戲《馬伯司氏》唱段「喑啞的烏鴉叫嘎嘎」</b>
+      <small>觀看 2,274 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=uF9tqF818BY" data-id="uF9tqF818BY" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/uF9tqF818BY/hqdefault.jpg" alt="劉欣然獨角戲《馬伯司氏》唱段 「想我少女多美妙」" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/uF9tqF818BY/hqdefault.jpg'"></span>
+      <b>劉欣然獨角戲《馬伯司氏》唱段 「想我少女多美妙」</b>
+      <small>觀看 2,273 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=V_j4IsFaAZc" data-id="V_j4IsFaAZc" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/V_j4IsFaAZc/hqdefault.jpg" alt="陳禹安爵士歌仔戲唱段，《許仙》「許夫郞怎解我難言苦狀」" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/V_j4IsFaAZc/hqdefault.jpg'"></span>
+      <b>陳禹安爵士歌仔戲唱段，《許仙》「許夫郞怎解我難言苦狀」</b>
+      <small>觀看 2,000 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=bMy1M2uoNS8" data-id="bMy1M2uoNS8" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/bMy1M2uoNS8/hqdefault.jpg" alt="寂寞是(妙玉選段)__Lonesome becomes (Collection from ADAMANTINA)" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/bMy1M2uoNS8/hqdefault.jpg'"></span>
+      <b>寂寞是(妙玉選段)__Lonesome becomes (Collection from ADAMANTINA)</b>
+      <small>觀看 1,936 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=K8Nw9dwIIxY" data-id="K8Nw9dwIIxY" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/K8Nw9dwIIxY/hqdefault.jpg" alt="京剧[汾河湾] 凌珂 刘欣然 许周熠" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/K8Nw9dwIIxY/hqdefault.jpg'"></span>
+      <b>京剧[汾河湾] 凌珂 刘欣然 许周熠</b>
+      <small>觀看 1,556 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=ahegWhvFLXc" data-id="ahegWhvFLXc" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/ahegWhvFLXc/hqdefault.jpg" alt="陳禹安《寶玉》最新唱段__搖擺行酒令" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/ahegWhvFLXc/hqdefault.jpg'"></span>
+      <b>陳禹安《寶玉》最新唱段__搖擺行酒令</b>
+      <small>觀看 1,545 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=J7f-AFFJv_A" data-id="J7f-AFFJv_A" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/J7f-AFFJv_A/hqdefault.jpg" alt="2015-石秀-陳禹安" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/J7f-AFFJv_A/hqdefault.jpg'"></span>
+      <b>2015-石秀-陳禹安</b>
+      <small>觀看 1,493 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=sD-uLrPyzsc" data-id="sD-uLrPyzsc" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/sD-uLrPyzsc/hqdefault.jpg" alt="劉欣然獨角戲《馬伯司氏》唱段「夫郎面容有驚異」" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/sD-uLrPyzsc/hqdefault.jpg'"></span>
+      <b>劉欣然獨角戲《馬伯司氏》唱段「夫郎面容有驚異」</b>
+      <small>觀看 1,283 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=UPZWXGqVtKo" data-id="UPZWXGqVtKo" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/UPZWXGqVtKo/hqdefault.jpg" alt="阿姨梦工厂：顾蓓莉老师《手扶拖拉机斯基》广场舞教学 教学片" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/UPZWXGqVtKo/hqdefault.jpg'"></span>
+      <b>阿姨梦工厂：顾蓓莉老师《手扶拖拉机斯基》广场舞教学 教学片</b>
+      <small>觀看 1,244 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=qqZK-VWRUMU" data-id="qqZK-VWRUMU" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/qqZK-VWRUMU/hqdefault.jpg" alt="《湘蘭圖》「香花妙」Song for Tuberose" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/qqZK-VWRUMU/hqdefault.jpg'"></span>
+      <b>《湘蘭圖》「香花妙」Song for Tuberose</b>
+      <small>觀看 1,243 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=Ogdny7VQ4Tc" data-id="Ogdny7VQ4Tc" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/Ogdny7VQ4Tc/hqdefault.jpg" alt="《作淫愁(上)初飛花瑪莉訓子》華麗公演！" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/Ogdny7VQ4Tc/hqdefault.jpg'"></span>
+      <b>《作淫愁(上)初飛花瑪莉訓子》華麗公演！</b>
+      <small>觀看 1,237 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=T_ny1B2X4fM" data-id="T_ny1B2X4fM" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/T_ny1B2X4fM/hqdefault.jpg" alt="劉欣然獨角戲《馬伯司氏》唱段「睡不著」" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/T_ny1B2X4fM/hqdefault.jpg'"></span>
+      <b>劉欣然獨角戲《馬伯司氏》唱段「睡不著」</b>
+      <small>觀看 1,214 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=9oOBaQQzRcA" data-id="9oOBaQQzRcA" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/9oOBaQQzRcA/hqdefault.jpg" alt="ciao2004-2010-1.mov" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/9oOBaQQzRcA/hqdefault.jpg'"></span>
+      <b>ciao2004-2010-1.mov</b>
+      <small>觀看 1,127 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=46f8XUgXsg8" data-id="46f8XUgXsg8" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/46f8XUgXsg8/hqdefault.jpg" alt="刘欣然獨角戲《曹七巧》-2011版" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/46f8XUgXsg8/hqdefault.jpg'"></span>
+      <b>刘欣然獨角戲《曹七巧》-2011版</b>
+      <small>觀看 1,063 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=n2yhdWPk2JI" data-id="n2yhdWPk2JI" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/n2yhdWPk2JI/hqdefault.jpg" alt="夏綠地-2010台北首演-宣傳片" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/n2yhdWPk2JI/hqdefault.jpg'"></span>
+      <b>夏綠地-2010台北首演-宣傳片</b>
+      <small>觀看 1,032 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=80iSbte7Uns" data-id="80iSbte7Uns" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/80iSbte7Uns/hqdefault.jpg" alt="《湘蘭圖》「浪酒野神」 Tipsy and Appetite" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/80iSbte7Uns/hqdefault.jpg'"></span>
+      <b>《湘蘭圖》「浪酒野神」 Tipsy and Appetite</b>
+      <small>觀看 1,029 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=_-RkyqQnkOw" data-id="_-RkyqQnkOw" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/_-RkyqQnkOw/hqdefault.jpg" alt="LQZ-2005-2016" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/_-RkyqQnkOw/hqdefault.jpg'"></span>
+      <b>LQZ-2005-2016</b>
+      <small>觀看 1,027 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=wyxgeLH0nFo" data-id="wyxgeLH0nFo" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/wyxgeLH0nFo/hqdefault.jpg" alt="劉欣然獨角戲《馬伯司氏》唱段「三更雨」" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/wyxgeLH0nFo/hqdefault.jpg'"></span>
+      <b>劉欣然獨角戲《馬伯司氏》唱段「三更雨」</b>
+      <small>觀看 979 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=3EX6jwis3dk" data-id="3EX6jwis3dk" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/3EX6jwis3dk/hqdefault.jpg" alt="爵士曹七巧選段「五四三＋一朵紅花」Jazz Tsô tshit khá Collections" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/3EX6jwis3dk/hqdefault.jpg'"></span>
+      <b>爵士曹七巧選段「五四三＋一朵紅花」Jazz Tsô tshit khá Collections</b>
+      <small>觀看 975 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=5Mpiy0-a-J8" data-id="5Mpiy0-a-J8" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/5Mpiy0-a-J8/hqdefault.jpg" alt="開心麻花爆笑音樂劇《爺們兒·三》插曲  我心向伶 刘欣然" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/5Mpiy0-a-J8/hqdefault.jpg'"></span>
+      <b>開心麻花爆笑音樂劇《爺們兒·三》插曲  我心向伶 刘欣然</b>
+      <small>觀看 965 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=Ti_jZQ471bQ" data-id="Ti_jZQ471bQ" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/Ti_jZQ471bQ/hqdefault.jpg" alt="石秀 trailer01" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/Ti_jZQ471bQ/hqdefault.jpg'"></span>
+      <b>石秀 trailer01</b>
+      <small>觀看 934 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=ZjIP1D_u5OQ" data-id="ZjIP1D_u5OQ" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/ZjIP1D_u5OQ/hqdefault.jpg" alt="馬伯司氏花絮" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/ZjIP1D_u5OQ/hqdefault.jpg'"></span>
+      <b>馬伯司氏花絮</b>
+      <small>觀看 804 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=sG7yaFWob3I" data-id="sG7yaFWob3I" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/sG7yaFWob3I/hqdefault.jpg" alt="[老外看中国]北京人的肖像 脸谱之下  刘欣然访谈" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/sG7yaFWob3I/hqdefault.jpg'"></span>
+      <b>[老外看中国]北京人的肖像 脸谱之下  刘欣然访谈</b>
+      <small>觀看 782 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=rbfSpvQ52dA" data-id="rbfSpvQ52dA" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/rbfSpvQ52dA/hqdefault.jpg" alt="2015-石秀-胡BB" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/rbfSpvQ52dA/hqdefault.jpg'"></span>
+      <b>2015-石秀-胡BB</b>
+      <small>觀看 774 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=HPQXeDqN_CA" data-id="HPQXeDqN_CA" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/HPQXeDqN_CA/hqdefault.jpg" alt="2016殺子報(片段)演出錄影" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/HPQXeDqN_CA/hqdefault.jpg'"></span>
+      <b>2016殺子報(片段)演出錄影</b>
+      <small>觀看 705 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=7ejZI0C2TWw" data-id="7ejZI0C2TWw" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/7ejZI0C2TWw/hqdefault.jpg" alt="李清照私人劇團感傷動作派 2010-2013" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/7ejZI0C2TWw/hqdefault.jpg'"></span>
+      <b>李清照私人劇團感傷動作派 2010-2013</b>
+      <small>觀看 689 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=yKy9RHgkNbI" data-id="yKy9RHgkNbI" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/yKy9RHgkNbI/hqdefault.jpg" alt="一見相公膽魂消" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/yKy9RHgkNbI/hqdefault.jpg'"></span>
+      <b>一見相公膽魂消</b>
+      <small>觀看 686 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=RmOegX08RMQ" data-id="RmOegX08RMQ" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/RmOegX08RMQ/hqdefault.jpg" alt="2011APAF.mov" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/RmOegX08RMQ/hqdefault.jpg'"></span>
+      <b>2011APAF.mov</b>
+      <small>觀看 675 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=P4lqW3dIpW0" data-id="P4lqW3dIpW0" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/P4lqW3dIpW0/hqdefault.jpg" alt="《京劇：作淫愁(上)初飛花瑪莉訓子》首演精華15mins vers." onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/P4lqW3dIpW0/hqdefault.jpg'"></span>
+      <b>《京劇：作淫愁(上)初飛花瑪莉訓子》首演精華15mins vers.</b>
+      <small>觀看 640 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=HkvZhg5C4OQ" data-id="HkvZhg5C4OQ" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/HkvZhg5C4OQ/hqdefault.jpg" alt="2015 石秀 胡BB HD" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/HkvZhg5C4OQ/hqdefault.jpg'"></span>
+      <b>2015 石秀 胡BB HD</b>
+      <small>觀看 618 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=GCdPELRIg6M" data-id="GCdPELRIg6M" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/GCdPELRIg6M/hqdefault.jpg" alt="行酒令_《寶玉》唱段" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/GCdPELRIg6M/hqdefault.jpg'"></span>
+      <b>行酒令_《寶玉》唱段</b>
+      <small>觀看 608 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=wqiyLO1RARo" data-id="wqiyLO1RARo" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/wqiyLO1RARo/hqdefault.jpg" alt="桃園科技藝術節 兆欣" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/wqiyLO1RARo/hqdefault.jpg'"></span>
+      <b>桃園科技藝術節 兆欣</b>
+      <small>觀看 519 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=VrJHoXsg7gg" data-id="VrJHoXsg7gg" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/VrJHoXsg7gg/hqdefault.jpg" alt="《京劇：作淫愁(上)初飛花瑪莉訓子》首演精華30mins ver." onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/VrJHoXsg7gg/hqdefault.jpg'"></span>
+      <b>《京劇：作淫愁(上)初飛花瑪莉訓子》首演精華30mins ver.</b>
+      <small>觀看 505 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=U8StqzEomb4" data-id="U8StqzEomb4" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/U8StqzEomb4/hqdefault.jpg" alt="ciao2004-2010-2.mov" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/U8StqzEomb4/hqdefault.jpg'"></span>
+      <b>ciao2004-2010-2.mov</b>
+      <small>觀看 469 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=tTNP0yR4lyc" data-id="tTNP0yR4lyc" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/tTNP0yR4lyc/hqdefault.jpg" alt="Blanche CF NO1.mov" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/tTNP0yR4lyc/hqdefault.jpg'"></span>
+      <b>Blanche CF NO1.mov</b>
+      <small>觀看 452 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=VIU6U3s-kss" data-id="VIU6U3s-kss" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/VIU6U3s-kss/hqdefault.jpg" alt="Mirei YAMAGATA" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/VIU6U3s-kss/hqdefault.jpg'"></span>
+      <b>Mirei YAMAGATA</b>
+      <small>觀看 386 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=BnD0GBrjIBI" data-id="BnD0GBrjIBI" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/BnD0GBrjIBI/hqdefault.jpg" alt="劉欣然獨角戲《馬伯司氏》唱段「夫郎為國建功勛」" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/BnD0GBrjIBI/hqdefault.jpg'"></span>
+      <b>劉欣然獨角戲《馬伯司氏》唱段「夫郎為國建功勛」</b>
+      <small>觀看 333 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=6vUfLtBV7LE" data-id="6vUfLtBV7LE" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/6vUfLtBV7LE/hqdefault.jpg" alt="baosun2010 digest.mov" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/6vUfLtBV7LE/hqdefault.jpg'"></span>
+      <b>baosun2010 digest.mov</b>
+      <small>觀看 297 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=Zzwlex018UQ" data-id="Zzwlex018UQ" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/Zzwlex018UQ/hqdefault.jpg" alt="2012-Blanche digest-a bebop musical" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/Zzwlex018UQ/hqdefault.jpg'"></span>
+      <b>2012-Blanche digest-a bebop musical</b>
+      <small>觀看 277 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=Pr7AoDdT4VM" data-id="Pr7AoDdT4VM" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/Pr7AoDdT4VM/hqdefault.jpg" alt="2012 Blanche digest .mov" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/Pr7AoDdT4VM/hqdefault.jpg'"></span>
+      <b>2012 Blanche digest .mov</b>
+      <small>觀看 271 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=yGyFMDpm-zc" data-id="yGyFMDpm-zc" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/yGyFMDpm-zc/hqdefault.jpg" alt="《贋作鍾馗》導演訪談" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/yGyFMDpm-zc/hqdefault.jpg'"></span>
+      <b>《贋作鍾馗》導演訪談</b>
+      <small>觀看 249 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=o_Tut5TaxGI" data-id="o_Tut5TaxGI" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/o_Tut5TaxGI/hqdefault.jpg" alt="叫官人莫驚嚇" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/o_Tut5TaxGI/hqdefault.jpg'"></span>
+      <b>叫官人莫驚嚇</b>
+      <small>觀看 248 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=zyN8xDhVCoo" data-id="zyN8xDhVCoo" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/zyN8xDhVCoo/hqdefault.jpg" alt="Trailer_《湘蘭圖》Lady Orchid _2025_ACC 30th" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/zyN8xDhVCoo/hqdefault.jpg'"></span>
+      <b>Trailer_《湘蘭圖》Lady Orchid _2025_ACC 30th</b>
+      <small>觀看 239 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=oh_Kd5fs5eo" data-id="oh_Kd5fs5eo" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/oh_Kd5fs5eo/hqdefault.jpg" alt="客語電視舞台劇《庄下人》第一集預告" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/oh_Kd5fs5eo/hqdefault.jpg'"></span>
+      <b>客語電視舞台劇《庄下人》第一集預告</b>
+      <small>觀看 233 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=Xbj8TSEix4k" data-id="Xbj8TSEix4k" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/Xbj8TSEix4k/hqdefault.jpg" alt="夏綠地-2010台北首演-宣傳片-0729曹七巧也來幫忙" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/Xbj8TSEix4k/hqdefault.jpg'"></span>
+      <b>夏綠地-2010台北首演-宣傳片-0729曹七巧也來幫忙</b>
+      <small>觀看 231 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=za0TGzIdh2Y" data-id="za0TGzIdh2Y" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/za0TGzIdh2Y/hqdefault.jpg" alt="2011 Dinner of Luciernaga" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/za0TGzIdh2Y/hqdefault.jpg'"></span>
+      <b>2011 Dinner of Luciernaga</b>
+      <small>觀看 225 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=4TmuSr5_itE" data-id="4TmuSr5_itE" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/4TmuSr5_itE/hqdefault.jpg" alt="[鳳凰視頻]音乐剧演员多元化 男旦刘欣然挑战抖包袱-20131013" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/4TmuSr5_itE/hqdefault.jpg'"></span>
+      <b>[鳳凰視頻]音乐剧演员多元化 男旦刘欣然挑战抖包袱-20131013</b>
+      <small>觀看 220 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=Gq075Prjfc8" data-id="Gq075Prjfc8" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/Gq075Prjfc8/hqdefault.jpg" alt="2011-Ciao, Ci Chao" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/Gq075Prjfc8/hqdefault.jpg'"></span>
+      <b>2011-Ciao, Ci Chao</b>
+      <small>觀看 219 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=7HILPd6mtuw" data-id="7HILPd6mtuw" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/7HILPd6mtuw/hqdefault.jpg" alt="2012-BLANCHE digest-song4" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/7HILPd6mtuw/hqdefault.jpg'"></span>
+      <b>2012-BLANCHE digest-song4</b>
+      <small>觀看 215 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=6vJlASOOxxE" data-id="6vJlASOOxxE" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/6vJlASOOxxE/hqdefault.jpg" alt="小青慢舉" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/6vJlASOOxxE/hqdefault.jpg'"></span>
+      <b>小青慢舉</b>
+      <small>觀看 213 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=qRLOzkVksXA" data-id="qRLOzkVksXA" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/qRLOzkVksXA/hqdefault.jpg" alt="妙玉唱段--懶畫眉" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/qRLOzkVksXA/hqdefault.jpg'"></span>
+      <b>妙玉唱段--懶畫眉</b>
+      <small>觀看 202 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=9Zv9lOwK0Fg" data-id="9Zv9lOwK0Fg" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/9Zv9lOwK0Fg/hqdefault.jpg" alt="LQZintro" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/9Zv9lOwK0Fg/hqdefault.jpg'"></span>
+      <b>LQZintro</b>
+      <small>觀看 200 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=DgaYiQUHp1Y" data-id="DgaYiQUHp1Y" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/DgaYiQUHp1Y/hqdefault.jpg" alt="疫情中的獨角戲--劉欣然獨角戲山東德州大劇院紀行20200614" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/DgaYiQUHp1Y/hqdefault.jpg'"></span>
+      <b>疫情中的獨角戲--劉欣然獨角戲山東德州大劇院紀行20200614</b>
+      <small>觀看 165 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=JmTHUQVvMB8" data-id="JmTHUQVvMB8" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/JmTHUQVvMB8/hqdefault.jpg" alt="【打卤面小组作品】乾旦坤生·贰零壹壹（清晰） 1280x720 2 00M h 264" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/JmTHUQVvMB8/hqdefault.jpg'"></span>
+      <b>【打卤面小组作品】乾旦坤生·贰零壹壹（清晰） 1280x720 2 00M h 264</b>
+      <small>觀看 142 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=aL4ytktdR1o" data-id="aL4ytktdR1o" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/aL4ytktdR1o/hqdefault.jpg" alt="Trailer_《湘蘭圖》Lady Orchid+《春之祭》The Rite of Spring_2025 ACC 30th(樸玉煉金)" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/aL4ytktdR1o/hqdefault.jpg'"></span>
+      <b>Trailer_《湘蘭圖》Lady Orchid+《春之祭》The Rite of Spring_2025 ACC 30th(樸玉煉金)</b>
+      <small>觀看 138 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=HdJU149-Vt0" data-id="HdJU149-Vt0" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/HdJU149-Vt0/hqdefault.jpg" alt="2011-Hunchback" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/HdJU149-Vt0/hqdefault.jpg'"></span>
+      <b>2011-Hunchback</b>
+      <small>觀看 132 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=gCCPJgWaTys" data-id="gCCPJgWaTys" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/gCCPJgWaTys/hqdefault.jpg" alt="2014ACT 川端康成三部曲 录像" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/gCCPJgWaTys/hqdefault.jpg'"></span>
+      <b>2014ACT 川端康成三部曲 录像</b>
+      <small>觀看 114 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=L8c5yUYiIIU" data-id="L8c5yUYiIIU" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/L8c5yUYiIIU/hqdefault.jpg" alt="ciao2004 2010 3" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/L8c5yUYiIIU/hqdefault.jpg'"></span>
+      <b>ciao2004 2010 3</b>
+      <small>觀看 111 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=2YjQd3tKI6I" data-id="2YjQd3tKI6I" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/2YjQd3tKI6I/hqdefault.jpg" alt="CF marie ccc 2011 H 264 LAN" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/2YjQd3tKI6I/hqdefault.jpg'"></span>
+      <b>CF marie ccc 2011 H 264 LAN</b>
+      <small>觀看 109 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=58DqQWNrrJ8" data-id="58DqQWNrrJ8" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/58DqQWNrrJ8/hqdefault.jpg" alt="CF marie 10mins" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/58DqQWNrrJ8/hqdefault.jpg'"></span>
+      <b>CF marie 10mins</b>
+      <small>觀看 103 次</small>
+    </a>
+<a class="card" href="https://www.youtube.com/watch?v=iBVsbrgzz9k" data-id="iBVsbrgzz9k" rel="noopener">
+      <span class="th"><img loading="lazy" src="https://i.ytimg.com/vi/iBVsbrgzz9k/hqdefault.jpg" alt="《庄下人》片頭場" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/iBVsbrgzz9k/hqdefault.jpg'"></span>
+      <b>《庄下人》片頭場</b>
+      <small>觀看 100 次</small>
+    </a>
+    </div>
     <a class="cta" href="https://www.youtube.com/@theatreofleeqingzhao" rel="noopener">前往 YouTube 頻道</a>
   </section>
+  <div class="lb" id="lb" hidden><button class="x" type="button">Close ×</button><div class="box"><iframe title="影片播放" allow="autoplay; accelerometer; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div></div>
 
 <footer class="seal">
   <img class="wm" src="../images/company/%E5%9C%98%E5%90%8D%E6%9B%B8%E6%B3%95_%E6%A9%AB%E5%BC%8F.png" alt="李清照私人劇團感傷動作派">
   <img class="stamp" src="../images/company/%E4%BD%9C%E6%B7%AB%E6%84%81_%E7%AB%A0.png" alt="" width="567" height="585">
   lyliu.art　劇照著作權屬各攝影者所有
-</footer>
+</footer><script>
+(function(){
+  var lb=document.getElementById('lb'), fr=lb.querySelector('iframe');
+  function open(id){ fr.src='https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0'; lb.hidden=false; document.body.style.overflow='hidden'; }
+  function close(){ fr.src=''; lb.hidden=true; document.body.style.overflow=''; }
+  document.querySelectorAll('.card').forEach(function(c){ c.addEventListener('click',function(e){ e.preventDefault(); open(c.dataset.id); }); });
+  lb.addEventListener('click',function(e){ if(e.target===lb||e.target.classList.contains('x')) close(); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&!lb.hidden) close(); });
+})();
+</script>
 </div>
 </body>
 </html>
