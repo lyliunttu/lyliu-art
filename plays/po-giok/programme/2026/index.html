@@ -27,7 +27,7 @@
   --cinnabar:#a8453a;
   --rule:rgba(42,31,39,.14);
   --measure:34rem;
-  --fs:1.0625rem;
+  --fs:1rem;
 }
 html.night{
   --paper:#f4e6ec;--paper-dim:#d6bfca;--muted:#a58f9b;--ink:#1d1519;--ink-2:#2a1f25;--rule:rgba(244,230,236,.16);--plum:#e7b3c7;
@@ -35,7 +35,7 @@ html.night{
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:6.6rem}
 body{margin:0;background:var(--ink);color:var(--paper);font-family:"Noto Serif TC","EB Garamond","Songti TC",serif;
-  font-size:var(--fs);line-height:1.95;font-feature-settings:"palt" 1;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s}
+  font-size:var(--fs);line-height:1.875;font-feature-settings:"palt" 1;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s}
 img{max-width:100%;display:block}
 a{color:var(--plum);text-underline-offset:.25em;text-decoration-thickness:.5px}
 a:focus-visible,button:focus-visible{outline:2px solid var(--lime-dim);outline-offset:3px}
@@ -75,7 +75,7 @@ h2::before{content:"";display:block;width:2.4rem;height:.36rem;background:var(--
 .eyebrow{font-family:"Noto Sans TC",sans-serif;font-size:.72rem;letter-spacing:.2em;color:var(--muted);margin:0 0 1rem}
 p{margin:0 0 1.05em;text-align:justify;overflow-wrap:break-word;line-break:strict}
 p:last-child{margin-bottom:0}
-.lead{font-size:1.12rem;line-height:1.9;font-weight:600}
+.lead{font-size:1rem;line-height:1.875;font-weight:600}
 .note{font-family:"Noto Sans TC",sans-serif;font-size:.8rem;line-height:1.9;color:var(--muted);text-align:left;margin-top:1.4rem}
 figure{margin:1.8rem 0}
 figure img{width:100%;border-radius:50% 50% 2px 2px / 34% 34% 2px 2px}
@@ -153,7 +153,7 @@ body.sung-only .only-spoken{display:block}
 .person h4{font-size:1rem;font-weight:600;margin:1.4rem 0 .4rem;letter-spacing:.04em}
 .person h4 span{font-family:"Noto Sans TC",sans-serif;font-weight:400;font-size:.7rem;letter-spacing:.14em;color:var(--muted);margin-left:.7em}
 /* ---------- 演職人員（沿用網站與湘蘭圖節目冊的 credits） ---------- */
-.credits{font-size:.97rem;line-height:1.85}
+.credits{font-size:1rem;line-height:1.85}
 .credits dl{margin:0 0 1.6rem;display:grid;grid-template-columns:7.4rem 1fr;gap:.5rem .9rem}
 .credits dt{font-family:"Noto Sans TC",sans-serif;font-size:.75rem;letter-spacing:.08em;color:var(--plum);padding-top:.3rem;line-height:1.7}
 .credits dt small{display:block;font-family:"EB Garamond",serif;font-style:italic;font-size:.82rem;letter-spacing:0;color:var(--muted)}
@@ -168,7 +168,7 @@ footer .stamp{width:5.2rem;height:auto;margin:0 auto 1.8rem;display:block}
 html.night footer .wm{filter:invert(1) hue-rotate(180deg)}
 
 @media (min-width:46rem){
-  :root{--fs:1.09rem}
+  :root{--fs:1rem}
   .wrap{padding:0 2rem}
   section{padding:3.4rem 0}
   .bar{margin:0 -2rem;padding-left:2rem;padding-right:2rem}

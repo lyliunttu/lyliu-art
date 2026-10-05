@@ -26,14 +26,14 @@
   --cinnabar:#a8453a;     /* 硃砂 */
   --rule:rgba(201,162,92,.28);
   --measure:34rem;
-  --fs:1.0625rem;
+  --fs:1rem;
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{
   margin:0;background:var(--ink);color:var(--paper);
   font-family:"Noto Serif TC","EB Garamond",Songti TC,serif;
-  font-size:var(--fs);line-height:1.95;
+  font-size:var(--fs);line-height:1.875;
   font-feature-settings:"palt" 1;
   -webkit-font-smoothing:antialiased;
 }
@@ -77,7 +77,7 @@ h3 .role{font-family:"Noto Sans TC",sans-serif;font-weight:400;font-size:.74rem;
 p{margin:0 0 1.05em;text-align:justify;
   overflow-wrap:break-word;line-break:strict}
 p:last-child{margin-bottom:0}
-.lead{font-size:1.12rem;line-height:1.9}
+.lead{font-size:1rem;line-height:1.875}
 
 /* ---------- language toggle ---------- */
 .langbar{display:flex;gap:.4rem;justify-content:flex-end;margin:-.4rem 0 1.2rem}
@@ -99,7 +99,7 @@ figcaption .dim{white-space:nowrap}
 
 /* ---------- quotes / notes ---------- */
 blockquote{margin:1.4rem 0;padding-left:1rem;border-left:2px solid var(--gold-dim);
-  font-size:.99rem;line-height:1.95;color:var(--paper-dim);font-style:italic}
+  font-size:1rem;line-height:1.875;color:var(--paper-dim);font-style:italic}
 blockquote p{text-indent:0}
 .verse{margin:1.4rem 0;text-align:center;color:var(--gold);font-size:1.05rem;letter-spacing:.06em}
 .note{font-size:.86rem;line-height:1.8;color:var(--muted);
@@ -148,7 +148,7 @@ h4.sub{font-size:1.05rem;font-weight:600;color:var(--gold);margin:2.2rem 0 .8rem
   border:1px dashed var(--rule);border-radius:2px;padding:1.4rem 1rem;margin:1.8rem 0;text-align:center}
 
 /* ---------- credits ---------- */
-.credits{font-size:.97rem;line-height:1.85}
+.credits{font-size:1rem;line-height:1.85}
 .credits dl{margin:0 0 1.6rem;display:grid;grid-template-columns:5.6rem 1fr;gap:.5rem .9rem}
 .credits dt{font-family:"Noto Sans TC",sans-serif;font-size:.75rem;letter-spacing:.1em;
   color:var(--gold);padding-top:.3rem;line-height:1.7}
@@ -166,7 +166,7 @@ footer .lat{font-family:"EB Garamond",serif;font-style:italic;font-size:1.05rem;
   color:var(--gold);margin-bottom:1.6rem}
 
 @media (min-width:46rem){
-  :root{--fs:1.09rem}
+  :root{--fs:1rem}
   .wrap{padding:0 2rem}
   section{padding:3.4rem 0}
   .cover{max-width:38rem;margin:0 auto}

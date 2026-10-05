@@ -11,7 +11,7 @@
 /* 字型與排法沿用《湘蘭圖 2026》節目冊；配色為甲 宣紙 */
 :root{
   --measure:34rem;
-  --fs:1.0625rem;
+  --fs:1rem;
   --cinnabar:#A8453A;
   --ink:#F3EFE6;
   --ink-2:#EAE5DA;
@@ -28,7 +28,7 @@ html{-webkit-text-size-adjust:100%}
 body{
   margin:0;background:var(--ink);color:var(--paper);
   font-family:"Noto Serif TC","EB Garamond","Songti TC",serif;
-  font-size:var(--fs);line-height:1.95;
+  font-size:var(--fs);line-height:1.875;
   font-feature-settings:"palt" 1;
   -webkit-font-smoothing:antialiased;
 }
@@ -56,7 +56,7 @@ h1 .en{display:block;font-family:"EB Garamond",serif;font-style:italic;
 .bio{padding:2.2rem 0 2.6rem;border-bottom:1px solid var(--rule)}
 p{margin:0 0 1.05em;text-align:justify;overflow-wrap:break-word;line-break:strict}
 p:last-child{margin-bottom:0}
-.bio p{font-size:1.12rem;line-height:1.9}
+.bio p{font-size:1rem;line-height:1.875}
 p i,p em{font-family:"EB Garamond",serif;font-style:italic;font-size:1.04em}
 .field{font-family:"Noto Sans TC",sans-serif;font-size:.78rem;letter-spacing:.08em;
   color:var(--muted);line-height:1.9;text-align:left;margin-bottom:1.4em}
@@ -90,7 +90,7 @@ footer .lat{font-family:"EB Garamond",serif;font-style:italic;font-size:1.05rem;
   color:var(--gold);margin-bottom:1.6rem}
 
 @media (min-width:46rem){
-  :root{--fs:1.09rem}
+  :root{--fs:1rem}
   .wrap{padding:0 2rem}
 }
 footer.seal .stamp{width:5.2rem;height:auto;margin:0 auto 1.8rem;display:block}
